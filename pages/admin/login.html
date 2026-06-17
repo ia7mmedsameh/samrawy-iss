@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Admin Portal Login | ISS SOLUTIONS</title>
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Outfit:wght@400;600;700;800&display=swap" rel="stylesheet">
+  <!-- CSS Stylesheets -->
+  <link rel="stylesheet" href="../../css/main.css">
+  <link rel="stylesheet" href="../../css/pages/admin.css">
+</head>
+<body class="login-layout">
+  
+  <div class="login-card fade-in">
+    <div class="login-card__header">
+      <div class="login-card__logo">ISS</div>
+      <h3 class="login-card__title">ISS INDUSTRIAL SOLUTIONS</h3>
+      <p class="text-small text-muted" style="margin: 4px 0 0 0; color: rgba(255,255,255,0.7);">Administration Portal</p>
+    </div>
+    
+    <div class="login-card__body">
+      <form id="admin-login-form">
+        <div class="form-group">
+          <label for="username" class="form-label">Username / Email</label>
+          <input type="text" id="username" class="form-input" placeholder="admin@iss-solutions.eu" required>
+        </div>
+        
+        <div class="form-group">
+          <label for="password" class="form-label">Password</label>
+          <input type="password" id="password" class="form-input" placeholder="••••••••" required>
+        </div>
+        
+        <div class="form-group">
+          <label for="role-select" class="form-label">Select Demo Role (Role-based access preview)</label>
+          <select id="role-select" class="form-input" style="height: 48px; padding: 0 var(--space-4);">
+            <option value="super_admin">Super Admin (All Access)</option>
+            <option value="content_manager">Content Manager (Articles & Pages)</option>
+            <option value="product_manager">Product Manager (Products & Specs)</option>
+            <option value="academy_manager">Academy Manager (Courses & Modules)</option>
+            <option value="marketing_manager">Marketing Manager (Partners, Certs, Leads)</option>
+          </select>
+          <span class="text-small text-muted mt-2" style="display: block;">
+            The dashboard enforces role permission constraints. Choose a role to see its custom module restrictions.
+          </span>
+        </div>
+        
+        <button type="submit" class="btn btn--secondary btn--full btn--lg mt-6" style="font-weight: var(--fw-bold);">
+          Sign In
+        </button>
+      </form>
+    </div>
+  </div>
+
+  <!-- Javascript -->
+  <script>
+    document.getElementById('admin-login-form').addEventListener('submit', (e) => {
+      e.preventDefault();
+      
+      const role = document.getElementById('role-select').value;
+      const username = document.getElementById('username').value;
+      
+      // Save simulated session in localStorage
+      localStorage.setItem('iss_admin_session', JSON.stringify({
+        loggedIn: true,
+        username: username || 'admin@iss-solutions.eu',
+        role: role
+      }));
+      
+      // Redirect to dashboard
+      window.location.href = './dashboard.html';
+    });
+  </script>
+</body>
+</html>

@@ -16,6 +16,8 @@ class CourseDetailPage {
     this.courseDuration = document.getElementById('course-duration');
     this.courseLevel = document.getElementById('course-level');
     this.courseInstructor = document.getElementById('course-instructor');
+    this.courseCertificate = document.getElementById('course-certificate');
+    this.courseLimit = document.getElementById('course-limit');
     this.courseCurriculum = document.getElementById('course-curriculum');
     this.courseOutcomes = document.getElementById('course-outcomes');
     this.enrollmentForm = document.getElementById('enrollment-form');
@@ -60,6 +62,42 @@ class CourseDetailPage {
     if (this.courseLevel) this.courseLevel.textContent = i18n.t(`common.${course.level}`);
     if (this.courseInstructor) this.courseInstructor.textContent = course.instructor;
 
+    // Render Certificate Status
+    if (this.courseCertificate) {
+      this.courseCertificate.textContent = course.certificate_enabled 
+        ? (i18n.currentLang === 'de' ? 'Ja' : 'Yes') 
+        : (i18n.currentLang === 'de' ? 'Nein' : 'No');
+    }
+
+    // Render Enrollment Limit
+    if (this.courseLimit) {
+      this.courseLimit.textContent = course.enrollment_limit 
+        ? `${course.enrollment_limit} ${i18n.currentLang === 'de' ? 'Plätze' : 'Seats'}`
+        : (i18n.currentLang === 'de' ? 'Keine Begrenzung' : 'No Limit');
+    }
+
+    // Render Instructor Profile
+    const instructorCard = document.getElementById('instructor-profile');
+    const instructorImg = document.getElementById('instructor-img');
+    const instructorName = document.getElementById('instructor-name');
+    const instructorBio = document.getElementById('instructor-bio');
+
+    if (instructorCard && course.instructor_profile) {
+      if (instructorImg) {
+        instructorImg.src = course.instructor_profile.image;
+        instructorImg.alt = course.instructor_profile.name;
+      }
+      if (instructorName) instructorName.textContent = course.instructor_profile.name;
+      if (instructorBio) {
+        instructorBio.textContent = i18n.currentLang === 'de' 
+          ? course.instructor_profile.bio_de 
+          : course.instructor_profile.bio_en;
+      }
+      instructorCard.style.display = 'block';
+    } else if (instructorCard) {
+      instructorCard.style.display = 'none';
+    }
+
     // Render outcomes
     if (this.courseOutcomes) {
       this.courseOutcomes.innerHTML = '';
@@ -100,7 +138,6 @@ class CourseDetailPage {
           this.courseCurriculum.appendChild(item);
         });
         
-        // Reinitialize Accordion event triggers
         this.initAccordionTriggers();
       }
     }
@@ -113,7 +150,6 @@ class CourseDetailPage {
       const content = item.querySelector('.accordion__content');
       trigger?.addEventListener('click', () => {
         const isOpen = item.classList.contains('is-open');
-        // Close others
         items.forEach(sib => {
           if (sib !== item) {
             sib.classList.remove('is-open');
@@ -121,7 +157,6 @@ class CourseDetailPage {
             if (sibContent) sibContent.style.maxHeight = '0';
           }
         });
-        // Toggle current
         item.classList.toggle('is-open', !isOpen);
         if (content) {
           content.style.maxHeight = isOpen ? '0' : `${content.scrollHeight}px`;
@@ -170,7 +205,6 @@ class CourseDetailPage {
 
     this.enrollmentForm.reset();
     
-    // Close modal via clicking backdrop or calling Modal system if global
     const modal = document.getElementById('enrollment-modal');
     const backdrop = document.getElementById('enrollment-modal-backdrop');
     modal?.classList.remove('is-active');

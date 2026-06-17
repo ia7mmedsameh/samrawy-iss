@@ -104,33 +104,24 @@
 
               <!-- Downloads tab -->
               <div class="tabs__panel" data-tab-panel="downloads">
-                <div class="product-downloads">
-                  <div class="download-item">
-                    <div class="download-item__info">
-                      <div class="download-item__icon">PDF</div>
-                      <div>
-                        <div class="download-item__name" data-i18n="product_detail.datasheet">Sicherheitsdatenblatt</div>
-                        <div class="download-item__size">PDF — 1.2 MB</div>
-                      </div>
-                    </div>
-                    <a href="#" class="btn btn--outline btn--sm" data-i18n="common.download">Herunterladen</a>
-                  </div>
-                  <div class="download-item">
-                    <div class="download-item__info">
-                      <div class="download-item__icon">PDF</div>
-                      <div>
-                        <div class="download-item__name" data-i18n="product_detail.technical_sheet">Technisches Merkblatt</div>
-                        <div class="download-item__size">PDF — 840 KB</div>
-                      </div>
-                    </div>
-                    <a href="#" class="btn btn--outline btn--sm" data-i18n="common.download">Herunterladen</a>
-                  </div>
+                <div class="product-downloads" id="product-downloads-list">
+                  <!-- Downloads injected dynamically -->
                 </div>
               </div>
 
             </div>
           </div>
 
+        </div>
+      </div>
+    </section>
+
+    <!-- Related Products Section -->
+    <section class="related-products section">
+      <div class="container">
+        <h2 class="h3 mb-8" data-i18n="product_detail.related_products">Ähnliche Produkte</h2>
+        <div class="grid grid--3" id="related-products-grid">
+          <!-- Related products injected dynamically -->
         </div>
       </div>
     </section>

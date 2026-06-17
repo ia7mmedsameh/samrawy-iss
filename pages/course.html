@@ -141,10 +141,30 @@
                     <span class="course-sidebar__info-label" data-i18n="common.instructor">Dozent</span>
                     <span class="course-sidebar__info-value" id="course-instructor">Dr. Michael Weber</span>
                   </div>
+                  <div class="course-sidebar__info-item">
+                    <span class="course-sidebar__info-label" data-i18n="academy_page.certificate">Zertifikat</span>
+                    <span class="course-sidebar__info-value" id="course-certificate">Ja</span>
+                  </div>
+                  <div class="course-sidebar__info-item">
+                    <span class="course-sidebar__info-label" data-i18n="academy_page.limit">Teilnehmergrenze</span>
+                    <span class="course-sidebar__info-value" id="course-limit">150</span>
+                  </div>
                 </div>
 
                 <button class="btn btn--secondary btn--full btn--lg mt-4" data-modal-open="enrollment-modal" data-i18n="academy_section.enroll">Jetzt anmelden</button>
               </div>
+            </div>
+
+            <!-- Instructor Profile Card -->
+            <div class="instructor-profile-card mt-8 card p-6" id="instructor-profile" style="display: none;">
+              <h4 class="h4 mb-4" data-i18n="academy_page.instructor_profile">Dozentenprofil</h4>
+              <div style="display: flex; align-items: center; gap: 1rem; margin-bottom: 1rem;">
+                <img id="instructor-img" src="" alt="" style="width: 60px; height: 60px; border-radius: 50%; object-fit: cover;">
+                <div>
+                  <h5 id="instructor-name" style="margin: 0; font-weight: var(--fw-semibold);">Dozenten Name</h5>
+                </div>
+              </div>
+              <p id="instructor-bio" class="text-small text-muted" style="margin: 0;">Dozenten Bio</p>
             </div>
             
             <!-- Learning Outcomes -->

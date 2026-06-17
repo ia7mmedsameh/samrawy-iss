@@ -47,29 +47,50 @@ class ProductDetailPage {
     const productName = i18n.currentLang === 'de' ? product.name_de : product.name_en;
     const productDesc = i18n.currentLang === 'de' ? product.description_de : product.description_en;
     
-    document.title = `${productName} | ISS SOLUTIONS`;
+    // Dynamically update SEO fields from product settings
+    if (product.meta_title) {
+      document.title = product.meta_title;
+    } else {
+      document.title = `${productName} | ISS SOLUTIONS`;
+    }
+
+    let metaDesc = document.querySelector('meta[name="description"]');
+    if (!metaDesc) {
+      metaDesc = document.createElement('meta');
+      metaDesc.name = 'description';
+      document.head.appendChild(metaDesc);
+    }
+    metaDesc.content = product.meta_description || productDesc;
+
+    // Open Graph SEO support
+    this._updateOGMeta('og:title', product.meta_title || `${productName} | ISS SOLUTIONS`);
+    this._updateOGMeta('og:description', product.meta_description || productDesc);
+    if (product.images && product.images[0]) {
+      this._updateOGMeta('og:image', product.images[0]);
+    }
+    this._updateCanonical(product.canonical_url || window.location.href);
 
     if (this.productCategoryLabel) this.productCategoryLabel.textContent = categoryName;
     if (this.productTitle) this.productTitle.textContent = productName;
     if (this.productDesc) this.productDesc.textContent = productDesc;
 
-    // Render image and thumbs (placeholder setups)
-    const imgUrl = 'https://images.unsplash.com/photo-1581092160607-ee22621dd758?q=80&w=600&auto=format&fit=crop';
+    // Render image and thumbs (multiple images support)
+    const images = product.images && product.images.length > 0 ? product.images : [
+      'https://images.unsplash.com/photo-1581092160607-ee22621dd758?q=80&w=600&auto=format&fit=crop'
+    ];
+    
     if (this.productMainImg) {
-      this.productMainImg.src = imgUrl;
+      this.productMainImg.src = images[0];
       this.productMainImg.alt = productName;
     }
 
     if (this.productThumbs) {
-      this.productThumbs.innerHTML = `
-        <div class="product-gallery__thumb is-active" data-src="${imgUrl}">
-          <img src="${imgUrl}" alt="${productName} View 1">
+      this.productThumbs.innerHTML = images.map((img, idx) => `
+        <div class="product-gallery__thumb ${idx === 0 ? 'is-active' : ''}" data-src="${img}">
+          <img src="${img}" alt="${productName} View ${idx + 1}">
         </div>
-        <div class="product-gallery__thumb" data-src="https://images.unsplash.com/photo-1581091226825-a6a2a5aee158?q=80&w=300&auto=format&fit=crop">
-          <img src="https://images.unsplash.com/photo-1581091226825-a6a2a5aee158?q=80&w=300&auto=format&fit=crop" alt="${productName} View 2">
-        </div>
-      `;
-      // Re-init gallery switcher script
+      `).join('');
+      
       this.initGallerySwitcher();
     }
 
@@ -96,7 +117,6 @@ class ProductDetailPage {
       if (product.specs) {
         Object.entries(product.specs).forEach(([key, val]) => {
           const row = document.createElement('tr');
-          // Simple key prettifier
           const prettyKey = key.split('_').map(w => w.charAt(0).toUpperCase() + w.slice(1)).join(' ');
           row.innerHTML = `
             <td>${prettyKey}</td>
@@ -104,6 +124,68 @@ class ProductDetailPage {
           `;
           this.productSpecsBody.appendChild(row);
         });
+      }
+    }
+
+    // Render Dynamic Downloads
+    const downloadsList = document.getElementById('product-downloads-list');
+    if (downloadsList) {
+      downloadsList.innerHTML = '';
+      if (product.pdf_files && product.pdf_files.length > 0) {
+        product.pdf_files.forEach(file => {
+          const fileName = i18n.currentLang === 'de' ? file.name_de : file.name_en;
+          const item = document.createElement('div');
+          item.className = 'download-item';
+          item.innerHTML = `
+            <div class="download-item__info">
+              <div class="download-item__icon">PDF</div>
+              <div>
+                <div class="download-item__name">${fileName}</div>
+                <div class="download-item__size">PDF — ${file.size}</div>
+              </div>
+            </div>
+            <a href="${file.url}" class="btn btn--outline btn--sm" data-i18n="common.download">${i18n.t('common.download')}</a>
+          `;
+          downloadsList.appendChild(item);
+        });
+      } else {
+        downloadsList.innerHTML = `<p class="text-muted" style="grid-column: 1/-1;">${i18n.currentLang === 'de' ? 'Keine Dokumente verfügbar.' : 'No documents available.'}</p>`;
+      }
+    }
+
+    // Render Related Products
+    const relatedGrid = document.getElementById('related-products-grid');
+    if (relatedGrid) {
+      relatedGrid.innerHTML = '';
+      if (product.related_products && product.related_products.length > 0) {
+        product.related_products.forEach(relSlug => {
+          const relProd = Products.find(p => p.slug === relSlug);
+          if (relProd && relProd.status === 'active') {
+            const relName = i18n.currentLang === 'de' ? relProd.name_de : relProd.name_en;
+            const relDesc = i18n.currentLang === 'de' ? relProd.description_de : relProd.description_en;
+            const relImg = relProd.images && relProd.images[0] ? relProd.images[0] : 'https://images.unsplash.com/photo-1581092160607-ee22621dd758?q=80&w=300&auto=format&fit=crop';
+            const relCat = ProductCategories.find(c => c.id === relProd.category_id);
+            const relCatName = relCat ? (i18n.currentLang === 'de' ? relCat.name_de : relCat.name_en) : '';
+
+            const card = document.createElement('div');
+            card.className = 'card card--product';
+            card.innerHTML = `
+              <div class="card__image">
+                <img src="${relImg}" alt="${relName}">
+              </div>
+              <div class="card__body">
+                <div class="card__category">${relCatName}</div>
+                <h3 class="card__title"><a href="./product.html?slug=${relProd.slug}">${relName}</a></h3>
+                <p class="card__desc">${relDesc}</p>
+                <a href="./product.html?slug=${relProd.slug}" class="btn btn--outline btn--sm btn--full" data-i18n="common.learn_more">${i18n.t('common.learn_more')}</a>
+              </div>
+            `;
+            relatedGrid.appendChild(card);
+          }
+        });
+      } else {
+        const relatedSection = document.querySelector('.related-products');
+        if (relatedSection) relatedSection.style.display = 'none';
       }
     }
   }
@@ -122,6 +204,26 @@ class ProductDetailPage {
         }
       });
     });
+  }
+
+  _updateOGMeta(property, content) {
+    let el = document.querySelector(`meta[property="${property}"]`);
+    if (!el) {
+      el = document.createElement('meta');
+      el.setAttribute('property', property);
+      document.head.appendChild(el);
+    }
+    el.content = content;
+  }
+
+  _updateCanonical(url) {
+    let el = document.querySelector('link[rel="canonical"]');
+    if (!el) {
+      el = document.createElement('link');
+      el.rel = 'canonical';
+      document.head.appendChild(el);
+    }
+    el.href = url;
   }
 }
 
