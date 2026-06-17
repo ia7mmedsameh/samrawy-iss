@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="de" dir="ltr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Agent werden | ISS SOLUTIONS</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Outfit:wght@400;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="../css/main.css">
+</head>
+<body class="page">
+  <div id="page-loader" class="loader-overlay">
+    <div class="loader"><div class="loader__spinner"></div></div>
+  </div>
+
+  <header id="site-header" class="site-header">
+    <div class="header-topbar">
+      <div class="container">
+        <div class="topbar-contact">
+          <a href="mailto:info@iss-solutions.eu">info@iss-solutions.eu</a>
+          <a href="tel:+493012345678">+49 30 1234 5678</a>
+        </div>
+        <div class="lang-switcher">
+          <button class="lang-switcher__btn is-active" data-lang="de">DE</button>
+          <button class="lang-switcher__btn" data-lang="en">EN</button>
+        </div>
+      </div>
+    </div>
+    <div class="header-main">
+      <div class="container">
+        <a href="../index.html" class="header-logo">
+          <div class="header-logo__icon">ISS</div>
+          <div class="header-logo__text"><span class="header-logo__name">ISS SOLUTIONS</span></div>
+        </a>
+        <nav class="header-nav">
+          <a href="../index.html" class="nav-link" data-i18n="nav.home">Startseite</a>
+          <div class="nav-item">
+            <a href="#" class="nav-link"><span data-i18n="nav.company">ISS</span></a>
+            <div class="nav-dropdown">
+              <a href="./about.html" class="nav-dropdown__link" data-i18n="nav.about">Über uns</a>
+              <a href="./chairman.html" class="nav-dropdown__link" data-i18n="nav.chairman">Botschaft des Vorsitzenden</a>
+              <a href="./policies.html" class="nav-dropdown__link" data-i18n="nav.policies">Unsere Richtlinien</a>
+              <a href="./certifications.html" class="nav-dropdown__link" data-i18n="nav.certifications">Zertifizierungen</a>
+              <a href="./hr.html" class="nav-dropdown__link" data-i18n="nav.hr">Personalwesen</a>
+            </div>
+          </div>
+          <a href="./products.html" class="nav-link" data-i18n="nav.products">Produkte</a>
+          <a href="./agent.html" class="nav-link is-active" data-i18n="nav.agent">Agent werden</a>
+          <a href="./academy.html" class="nav-link" data-i18n="nav.academy">Akademie</a>
+          <a href="./blog.html" class="nav-link" data-i18n="nav.blog">Blog</a>
+        </nav>
+        <div class="header-cta">
+          <a href="./contact.html" class="btn btn--primary btn--sm" data-i18n="nav.contact">Kontakt</a>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <main class="page-content">
+    <section class="agent-hero">
+      <div class="container">
+        <span class="text-overline" data-i18n="agent_section.overline">Partnerschaft</span>
+        <h1 class="page-header__title" data-i18n="agent_page.title">Werden Sie unser Agent</h1>
+        <p class="page-header__desc" data-i18n="agent_page.desc">Schließen Sie sich unserem wachsenden Netzwerk an und profitieren Sie von exklusiven Vorteilen.</p>
+      </div>
+    </section>
+
+    <!-- Partner Benefits -->
+    <section class="agent-benefits">
+      <div class="container">
+        <div class="section-header">
+          <h2 class="section-header__title" data-i18n="agent_page.why_title">Warum mit uns zusammenarbeiten?</h2>
+        </div>
+        <div class="grid grid--4 fade-in">
+          <div class="benefit-card">
+            <div class="benefit-card__number">01</div>
+            <h3 class="benefit-card__title" data-i18n="agent_section.benefit_1">Exklusive Gebietsrechte</h3>
+            <p class="benefit-card__desc">Sichern Sie sich die alleinigen Vertriebsrechte in Ihrer Zielregion.</p>
+          </div>
+          <div class="benefit-card">
+            <div class="benefit-card__number">02</div>
+            <h3 class="benefit-card__title" data-i18n="agent_section.benefit_2">Umfassende Schulung</h3>
+            <p class="benefit-card__desc">Regelmäßige Zertifizierungskurse über die ISS Akademie.</p>
+          </div>
+          <div class="benefit-card">
+            <div class="benefit-card__number">03</div>
+            <h3 class="benefit-card__title" data-i18n="agent_section.benefit_3">Marketing-Unterstützung</h3>
+            <p class="benefit-card__desc">Wir stellen Ihnen Kataloge, Designs und Kampagnenvorlagen bereit.</p>
+          </div>
+          <div class="benefit-card">
+            <div class="benefit-card__number">04</div>
+            <h3 class="benefit-card__title" data-i18n="agent_section.benefit_4">Technischer Support</h3>
+            <p class="benefit-card__desc">Direkter Draht zu unseren F&amp;E-Laboren und Ingenieuren.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Application Form Section -->
+    <section class="agent-form-section">
+      <div class="container">
+        <div class="agent-form-wrapper fade-in">
+          <h2 class="h3 mb-6 text-center" data-i18n="agent_page.apply_title">Jetzt bewerben</h2>
+          <form id="agent-form" novalidate>
+            <div class="form-row">
+              <div class="form-group">
+                <label for="agent-name" class="form-label form-label--required" data-i18n="agent_page.form_name">Vollständiger Name</label>
+                <input type="text" id="agent-name" name="name" class="form-input" required>
+                <span class="form-error">Bitte Namen eingeben.</span>
+              </div>
+              <div class="form-group">
+                <label for="agent-email" class="form-label form-label--required" data-i18n="agent_page.form_email">E-Mail</label>
+                <input type="email" id="agent-email" name="email" class="form-input" required>
+                <span class="form-error">Bitte gültige E-Mail eingeben.</span>
+              </div>
+            </div>
+            
+            <div class="form-row">
+              <div class="form-group">
+                <label for="agent-phone" class="form-label form-label--required" data-i18n="agent_page.form_phone">Telefon</label>
+                <input type="tel" id="agent-phone" name="phone" class="form-input" required>
+                <span class="form-error">Bitte gültige Telefonnummer eingeben.</span>
+              </div>
+              <div class="form-group">
+                <label for="agent-company" class="form-label form-label--required" data-i18n="agent_page.form_company">Unternehmen</label>
+                <input type="text" id="agent-company" name="company" class="form-input" required>
+                <span class="form-error">Bitte Unternehmen eingeben.</span>
+              </div>
+            </div>
+
+            <div class="form-row">
+              <div class="form-group">
+                <label for="agent-country" class="form-label form-label--required" data-i18n="agent_page.form_country">Land</label>
+                <input type="text" id="agent-country" name="country" class="form-input" required>
+                <span class="form-error">Bitte Land eingeben.</span>
+              </div>
+              <div class="form-group">
+                <label for="agent-experience" class="form-label" data-i18n="agent_page.form_experience">Branchenerfahrung</label>
+                <input type="text" id="agent-experience" name="experience" class="form-input">
+              </div>
+            </div>
+
+            <div class="form-group">
+              <label for="agent-message" class="form-label" data-i18n="agent_page.form_message">Zusätzliche Informationen</label>
+              <textarea id="agent-message" name="message" class="form-textarea"></textarea>
+            </div>
+
+            <button type="submit" class="btn btn--secondary btn--full btn--lg" data-i18n="agent_page.form_submit">Bewerbung absenden</button>
+          </form>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer id="site-footer" class="site-footer">
+    <div class="footer-bottom">
+      <div class="container">
+        <span class="footer-copyright">&copy; 2026 ISS SOLUTIONS.</span>
+      </div>
+    </div>
+  </footer>
+
+  <script type="module" src="../js/pages/agent.js"></script>
+</body>
+</html>

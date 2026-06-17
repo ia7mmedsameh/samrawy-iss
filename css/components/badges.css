@@ -1,0 +1,81 @@
+/* ============================================
+   BADGES — Badge / Tag Component
+   ============================================ */
+
+.badge {
+  display: inline-flex;
+  align-items: center;
+  gap: var(--space-1);
+  padding: var(--space-1) var(--space-3);
+  font-size: var(--fs-xs);
+  font-weight: var(--fw-semibold);
+  border-radius: var(--radius-full);
+  line-height: 1.5;
+  white-space: nowrap;
+}
+
+.badge--primary {
+  background: var(--primary-50);
+  color: var(--primary);
+}
+
+.badge--secondary {
+  background: var(--secondary-50);
+  color: var(--secondary-dark);
+}
+
+.badge--accent {
+  background: rgba(var(--accent-rgb), 0.1);
+  color: var(--accent-dark);
+}
+
+.badge--success {
+  background: var(--success-light);
+  color: #065F46;
+}
+
+.badge--warning {
+  background: var(--warning-light);
+  color: #92400E;
+}
+
+.badge--error {
+  background: var(--error-light);
+  color: #991B1B;
+}
+
+.badge--outline {
+  background: transparent;
+  border: 1px solid var(--neutral-300);
+  color: var(--neutral-600);
+}
+
+/* Tag Cloud */
+.tag-cloud {
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--space-2);
+}
+
+.tag {
+  display: inline-flex;
+  align-items: center;
+  padding: var(--space-1) var(--space-3);
+  font-size: var(--fs-xs);
+  font-weight: var(--fw-medium);
+  color: var(--neutral-600);
+  background: var(--neutral-100);
+  border-radius: var(--radius-full);
+  transition: all var(--duration-fast) var(--ease-default);
+  cursor: pointer;
+}
+
+.tag:hover {
+  background: var(--primary);
+  color: var(--white);
+}
+
+.tag.is-active {
+  background: var(--primary);
+  color: var(--white);
+}

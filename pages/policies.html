@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="de" dir="ltr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Unsere Richtlinien | ISS SOLUTIONS</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Outfit:wght@400;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="../css/main.css">
+</head>
+<body class="page">
+  <div id="page-loader" class="loader-overlay">
+    <div class="loader"><div class="loader__spinner"></div></div>
+  </div>
+
+  <header id="site-header" class="site-header">
+    <div class="header-topbar">
+      <div class="container">
+        <div class="topbar-contact">
+          <a href="mailto:info@iss-solutions.eu">info@iss-solutions.eu</a>
+          <a href="tel:+493012345678">+49 30 1234 5678</a>
+        </div>
+        <div class="lang-switcher">
+          <button class="lang-switcher__btn is-active" data-lang="de">DE</button>
+          <button class="lang-switcher__btn" data-lang="en">EN</button>
+        </div>
+      </div>
+    </div>
+    <div class="header-main">
+      <div class="container">
+        <a href="../index.html" class="header-logo">
+          <div class="header-logo__icon">ISS</div>
+          <div class="header-logo__text"><span class="header-logo__name">ISS SOLUTIONS</span></div>
+        </a>
+        <nav class="header-nav">
+          <a href="../index.html" class="nav-link" data-i18n="nav.home">Startseite</a>
+          <div class="nav-item">
+            <a href="#" class="nav-link is-active"><span data-i18n="nav.company">ISS</span></a>
+            <div class="nav-dropdown">
+              <a href="./about.html" class="nav-dropdown__link" data-i18n="nav.about">Über uns</a>
+              <a href="./chairman.html" class="nav-dropdown__link" data-i18n="nav.chairman">Botschaft des Vorsitzenden</a>
+              <a href="./policies.html" class="nav-dropdown__link is-active" data-i18n="nav.policies">Unsere Richtlinien</a>
+              <a href="./certifications.html" class="nav-dropdown__link" data-i18n="nav.certifications">Zertifizierungen</a>
+              <a href="./hr.html" class="nav-dropdown__link" data-i18n="nav.hr">Personalwesen</a>
+            </div>
+          </div>
+          <a href="./products.html" class="nav-link" data-i18n="nav.products">Produkte</a>
+          <a href="./agent.html" class="nav-link" data-i18n="nav.agent">Agent werden</a>
+          <a href="./academy.html" class="nav-link" data-i18n="nav.academy">Akademie</a>
+          <a href="./blog.html" class="nav-link" data-i18n="nav.blog">Blog</a>
+        </nav>
+        <div class="header-cta">
+          <a href="./contact.html" class="btn btn--primary btn--sm" data-i18n="nav.contact">Kontakt</a>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <main class="page-content">
+    <section class="page-header">
+      <div class="container">
+        <span class="page-header__overline" data-i18n="nav.policies">Unsere Richtlinien</span>
+        <h1 class="page-header__title">Qualität, Umwelt &amp; Sicherheit</h1>
+        <p class="page-header__desc">Unsere verbindlichen Standards für nachhaltige Wertarbeit.</p>
+      </div>
+    </section>
+
+    <!-- Policies Accordion / Tabs -->
+    <section class="section">
+      <div class="container container--md">
+        <div class="tabs tabs--pills">
+          <div class="tabs__nav">
+            <button class="tabs__btn is-active" data-tab="quality">Qualitätspolitik</button>
+            <button class="tabs__btn" data-tab="environment">Umweltschutz</button>
+            <button class="tabs__btn" data-tab="safety">Arbeitssicherheit</button>
+          </div>
+          
+          <div class="tabs__panel is-active" data-tab-panel="quality">
+            <h2 class="h3">Höchste Qualität nach deutschen Standards</h2>
+            <p>Unser wichtigstes Unternehmensziel ist die vollständige Zufriedenheit unserer Kunden. Wir erreichen dies durch strenge Einhaltung zertifizierter Prozesse und Qualitätskontrollen in jeder Phase der Rohstoffauswahl, Produktion und Abfüllung.</p>
+            <ul>
+              <li><strong>ISO 9001:2015</strong> zertifiziertes Qualitätsmanagementsystem.</li>
+              <li>Präzise Analytik in unseren eigenen Laboren.</li>
+              <li>Lückenlose Chargenrückverfolgbarkeit für jedes unserer Produkte.</li>
+            </ul>
+          </div>
+          
+          <div class="tabs__panel" data-tab-panel="environment">
+            <h2 class="h3">Schonung der Ressourcen für kommende Generationen</h2>
+            <p>Wir verpflichten uns zur kontinuierlichen Reduzierung unserer Umweltauswirkungen. Dies gilt sowohl für unsere Produktionsstandorte als auch für die Lebenszyklen unserer Endprodukte.</p>
+            <ul>
+              <li><strong>ISO 14001:2015</strong> zertifiziertes Umweltmanagementsystem.</li>
+              <li>Reduktion flüchtiger organischer Verbindungen (VOC) in all unseren Beschichtungsstoffen.</li>
+              <li>Einsatz recyclingfähiger Verpackungen und umweltschonender Herstellungsverfahren.</li>
+            </ul>
+          </div>
+          
+          <div class="tabs__panel" data-tab-panel="safety">
+            <h2 class="h3">Gesundheit &amp; Sicherheit stehen an erster Stelle</h2>
+            <p>Die Gesundheit unserer Mitarbeiter sowie der Verarbeiter unserer bauchemischen Systeme ist unser höchstes Gut. Wir schulen und statten unsere Teams konsequent aus und formulieren unsere Produkte anwendungssicher.</p>
+            <ul>
+              <li>Systematische Gefährdungsbeurteilungen aller Arbeitsplätze.</li>
+              <li>Detaillierte Sicherheitsdatenblätter (SDB/SDS) nach der europäischen REACH-Verordnung.</li>
+              <li>Kontinuierliche Arbeitssicherheitsunterweisungen für alle operativen Mitarbeiter.</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer id="site-footer" class="site-footer">
+    <div class="footer-bottom">
+      <div class="container">
+        <span class="footer-copyright">&copy; 2026 ISS SOLUTIONS.</span>
+      </div>
+    </div>
+  </footer>
+
+  <script type="module" src="../js/core/app.js"></script>
+</body>
+</html>

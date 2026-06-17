@@ -1,0 +1,83 @@
+/* ============================================
+   TABS — Tab Component
+   ============================================ */
+
+.tabs {
+  margin-bottom: var(--space-8);
+}
+
+.tabs__nav {
+  display: flex;
+  border-bottom: 2px solid var(--neutral-200);
+  gap: var(--space-1);
+  overflow-x: auto;
+  scrollbar-width: none;
+  -ms-overflow-style: none;
+}
+
+.tabs__nav::-webkit-scrollbar {
+  display: none;
+}
+
+.tabs__btn {
+  padding: var(--space-3) var(--space-6);
+  font-size: var(--fs-sm);
+  font-weight: var(--fw-medium);
+  color: var(--neutral-500);
+  border-bottom: 2px solid transparent;
+  margin-bottom: -2px;
+  white-space: nowrap;
+  transition: all var(--duration-fast) var(--ease-default);
+}
+
+.tabs__btn:hover {
+  color: var(--primary);
+}
+
+.tabs__btn.is-active {
+  color: var(--primary);
+  border-bottom-color: var(--secondary);
+  font-weight: var(--fw-semibold);
+}
+
+.tabs__panel {
+  display: none;
+  padding-top: var(--space-6);
+  animation: tabFadeIn var(--duration-normal) var(--ease-out);
+}
+
+.tabs__panel.is-active {
+  display: block;
+}
+
+@keyframes tabFadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(8px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* ---- Pills Variant ---- */
+.tabs--pills .tabs__nav {
+  border-bottom: none;
+  background: var(--neutral-100);
+  border-radius: var(--radius-lg);
+  padding: var(--space-1);
+  gap: 0;
+}
+
+.tabs--pills .tabs__btn {
+  border-bottom: none;
+  border-radius: var(--radius-md);
+  margin-bottom: 0;
+}
+
+.tabs--pills .tabs__btn.is-active {
+  background: var(--white);
+  box-shadow: var(--shadow-sm);
+  color: var(--primary);
+}

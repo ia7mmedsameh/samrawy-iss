@@ -1,0 +1,158 @@
+/* ============================================
+   AGENT — Become Our Agent Page
+   ============================================ */
+
+.agent-hero {
+  background: linear-gradient(135deg, var(--primary), var(--primary-dark));
+  padding: var(--space-24) 0;
+  position: relative;
+  overflow: hidden;
+}
+
+.agent-hero::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background: radial-gradient(circle at 80% 30%, rgba(var(--secondary-rgb), 0.15) 0%, transparent 50%);
+}
+
+.agent-benefits {
+  padding: var(--space-24) 0;
+}
+
+.benefit-card {
+  padding: var(--space-8);
+  background: var(--white);
+  border-radius: var(--radius-xl);
+  border: 1px solid var(--neutral-200);
+  transition: all var(--duration-normal) var(--ease-default);
+  position: relative;
+  overflow: hidden;
+}
+
+.benefit-card::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 4px;
+  background: var(--secondary);
+  transform: scaleX(0);
+  transition: transform var(--duration-normal) var(--ease-default);
+  transform-origin: left;
+}
+
+.benefit-card:hover::before {
+  transform: scaleX(1);
+}
+
+.benefit-card:hover {
+  box-shadow: var(--shadow-lg);
+  transform: translateY(-4px);
+}
+
+.benefit-card__number {
+  font-family: var(--font-heading);
+  font-size: var(--fs-4xl);
+  font-weight: var(--fw-extrabold);
+  color: var(--primary-50);
+  line-height: 1;
+  margin-bottom: var(--space-4);
+}
+
+.benefit-card__title {
+  font-size: var(--fs-lg);
+  font-weight: var(--fw-bold);
+  margin-bottom: var(--space-3);
+}
+
+.benefit-card__desc {
+  font-size: var(--fs-sm);
+  color: var(--neutral-500);
+}
+
+/* Agent Form */
+.agent-form-section {
+  padding: var(--space-24) 0;
+  background: var(--neutral-50);
+}
+
+.agent-form-wrapper {
+  max-width: 700px;
+  margin: 0 auto;
+  background: var(--white);
+  padding: var(--space-10);
+  border-radius: var(--radius-xl);
+  box-shadow: var(--shadow-md);
+}
+
+/* ---- Contact Page ---- */
+.contact-section {
+  padding: var(--space-16) 0;
+}
+
+.contact-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: var(--space-12);
+}
+
+.contact-info {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-6);
+}
+
+.contact-info-item {
+  display: flex;
+  gap: var(--space-4);
+  padding: var(--space-5);
+  background: var(--neutral-50);
+  border-radius: var(--radius-lg);
+}
+
+.contact-info-item__icon {
+  width: 48px;
+  height: 48px;
+  background: var(--primary-50);
+  border-radius: var(--radius-md);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--primary);
+  flex-shrink: 0;
+}
+
+.contact-info-item__icon svg {
+  width: 22px;
+  height: 22px;
+}
+
+.contact-info-item__label {
+  font-size: var(--fs-xs);
+  font-weight: var(--fw-bold);
+  letter-spacing: var(--ls-wide);
+  text-transform: uppercase;
+  color: var(--neutral-400);
+  margin-bottom: var(--space-1);
+}
+
+.contact-info-item__value {
+  font-size: var(--fs-base);
+  font-weight: var(--fw-medium);
+  color: var(--neutral-800);
+}
+
+.contact-map {
+  border-radius: var(--radius-xl);
+  overflow: hidden;
+  min-height: 400px;
+  background: var(--neutral-100);
+}
+
+@media (max-width: 768px) {
+  .contact-grid {
+    grid-template-columns: 1fr;
+  }
+}

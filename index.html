@@ -1,0 +1,604 @@
+<!DOCTYPE html>
+<html lang="de" dir="ltr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- SEO Meta Tags -->
+  <title data-i18n="hero.title_1">ISS Industrial Solutions</title>
+  <meta name="description" content="Premium construction chemicals and industrial systems from Germany.">
+  <meta property="og:title" content="ISS Industrial Solutions">
+  <meta property="og:description" content="Premium construction chemicals and industrial systems from Germany.">
+  <meta property="og:type" content="website">
+  <link rel="canonical" href="http://localhost:3000/index.html">
+  
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Outfit:wght@400;600;700;800&family=JetBrains+Mono:wght@400;700&display=swap" rel="stylesheet">
+  
+  <!-- CSS Stylesheets -->
+  <link rel="stylesheet" href="./css/main.css">
+</head>
+<body class="page">
+  <!-- Page Loader -->
+  <div id="page-loader" class="loader-overlay">
+    <div class="loader">
+      <div class="loader__spinner"></div>
+      <div class="loader__text" data-i18n="common.loading">Wird geladen...</div>
+    </div>
+  </div>
+
+  <!-- Header -->
+  <header id="site-header" class="site-header">
+    <!-- Top Bar -->
+    <div class="header-topbar">
+      <div class="container">
+        <div class="topbar-contact">
+          <a href="mailto:info@iss-solutions.eu">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path><polyline points="22,6 12,13 2,6"></polyline></svg>
+            <span>info@iss-solutions.eu</span>
+          </a>
+          <a href="tel:+493012345678">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"></path></svg>
+            <span>+49 30 1234 5678</span>
+          </a>
+        </div>
+        <!-- Language Switcher -->
+        <div class="lang-switcher">
+          <button class="lang-switcher__btn is-active" data-lang="de">DE</button>
+          <button class="lang-switcher__btn" data-lang="en">EN</button>
+        </div>
+      </div>
+    </div>
+
+    <!-- Main Navigation Header -->
+    <div class="header-main">
+      <div class="container">
+        <!-- Logo -->
+        <a href="./index.html" class="header-logo">
+          <div class="header-logo__icon">ISS</div>
+          <div class="header-logo__text">
+            <span class="header-logo__name">ISS SOLUTIONS</span>
+            <span class="header-logo__tagline" data-i18n="hero.overline">Bauchemie &amp; Industrielle Lösungen</span>
+          </div>
+        </a>
+
+        <!-- Desktop Nav -->
+        <nav class="header-nav" aria-label="Main Navigation">
+          <div class="nav-item">
+            <a href="./index.html" class="nav-link is-active" data-i18n="nav.home">Startseite</a>
+          </div>
+          <!-- Menu Item 1: ISS (Dropdown) -->
+          <div class="nav-item">
+            <a href="#" class="nav-link">
+              <span data-i18n="nav.company">ISS</span>
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="6 9 12 15 18 9"></polyline></svg>
+            </a>
+            <div class="nav-dropdown">
+              <a href="./pages/about.html" class="nav-dropdown__link" data-i18n="nav.about">Über uns</a>
+              <a href="./pages/chairman.html" class="nav-dropdown__link" data-i18n="nav.chairman">Botschaft des Vorsitzenden</a>
+              <a href="./pages/policies.html" class="nav-dropdown__link" data-i18n="nav.policies">Unsere Richtlinien</a>
+              <a href="./pages/certifications.html" class="nav-dropdown__link" data-i18n="nav.certifications">Zertifizierungen</a>
+              <a href="./pages/hr.html" class="nav-dropdown__link" data-i18n="nav.hr">Personalwesen</a>
+            </div>
+          </div>
+          <!-- Menu Item 2: Products (Mega Menu) -->
+          <div class="nav-item">
+            <a href="./pages/products.html" class="nav-link">
+              <span data-i18n="nav.products">Produkte</span>
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="6 9 12 15 18 9"></polyline></svg>
+            </a>
+            <div class="nav-mega">
+              <div class="nav-mega__grid">
+                <div class="nav-mega__category">
+                  <span class="nav-mega__title" data-i18n="nav.insulation">Isoliersysteme</span>
+                  <a href="./pages/category.html?slug=insulation-systems" class="nav-mega__link">Acrylic / Astromic / Nano Ceramic</a>
+                </div>
+                <div class="nav-mega__category">
+                  <span class="nav-mega__title" data-i18n="nav.epoxy">Epoxidsysteme</span>
+                  <a href="./pages/category.html?slug=epoxy-systems" class="nav-mega__link">Transparent / Colored / Mica / 3D</a>
+                </div>
+                <div class="nav-mega__category">
+                  <span class="nav-mega__title" data-i18n="nav.microcement">Mikrozement</span>
+                  <a href="./pages/category.html?slug=microcement" class="nav-mega__link">Microcement / Primers / Protection</a>
+                </div>
+                <div class="nav-mega__category">
+                  <span class="nav-mega__title" data-i18n="nav.concrete">Betonbehandlungen</span>
+                  <a href="./pages/category.html?slug=concrete-treatments" class="nav-mega__link">Additives / Coatings / Protection</a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- Menu Item 3: Become Our Agent -->
+          <div class="nav-item">
+            <a href="./pages/agent.html" class="nav-link" data-i18n="nav.agent">Agent werden</a>
+          </div>
+          <!-- Menu Item 4: Academy -->
+          <div class="nav-item">
+            <a href="./pages/academy.html" class="nav-link" data-i18n="nav.academy">Akademie</a>
+          </div>
+          <!-- Blog -->
+          <div class="nav-item">
+            <a href="./pages/blog.html" class="nav-link" data-i18n="nav.blog">Blog</a>
+          </div>
+        </nav>
+
+        <!-- CTA in Header -->
+        <div class="header-cta">
+          <a href="./pages/contact.html" class="btn btn--primary btn--sm" data-i18n="nav.contact">Kontakt</a>
+        </div>
+
+        <!-- Mobile Nav Toggle -->
+        <button id="mobile-toggle" class="mobile-toggle" aria-label="Toggle Navigation">
+          <span class="mobile-toggle__bar"></span>
+          <span class="mobile-toggle__bar"></span>
+          <span class="mobile-toggle__bar"></span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <!-- Mobile Nav Menu -->
+  <div id="mobile-overlay" class="mobile-nav__overlay"></div>
+  <nav id="mobile-nav" class="mobile-nav" aria-label="Mobile Navigation">
+    <div class="mobile-nav__header">
+      <span class="header-logo__name">ISS SOLUTIONS</span>
+      <button id="mobile-close" class="mobile-nav__close" aria-label="Close Navigation">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" width="24" height="24"><line x1="18" y1="6" x2="6" y2="18"></line><line x1="6" y1="6" x2="18" y2="18"></line></svg>
+      </button>
+    </div>
+    <div class="mobile-nav__body">
+      <a href="./index.html" class="mobile-nav__link" data-i18n="nav.home">Startseite</a>
+      <a href="#" class="mobile-nav__link" data-submenu="company">
+        <span data-i18n="nav.company">ISS</span>
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" width="16" height="16"><polyline points="6 9 12 15 18 9"></polyline></svg>
+      </a>
+      <div class="mobile-nav__submenu">
+        <a href="./pages/about.html" class="mobile-nav__sublink" data-i18n="nav.about">Über uns</a>
+        <a href="./pages/chairman.html" class="mobile-nav__sublink" data-i18n="nav.chairman">Botschaft des Vorsitzenden</a>
+        <a href="./pages/policies.html" class="mobile-nav__sublink" data-i18n="nav.policies">Unsere Richtlinien</a>
+        <a href="./pages/certifications.html" class="mobile-nav__sublink" data-i18n="nav.certifications">Zertifizierungen</a>
+        <a href="./pages/hr.html" class="mobile-nav__sublink" data-i18n="nav.hr">Personalwesen</a>
+      </div>
+      <a href="#" class="mobile-nav__link" data-submenu="products">
+        <span data-i18n="nav.products">Produkte</span>
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" width="16" height="16"><polyline points="6 9 12 15 18 9"></polyline></svg>
+      </a>
+      <div class="mobile-nav__submenu">
+        <a href="./pages/category.html?slug=insulation-systems" class="mobile-nav__sublink" data-i18n="nav.insulation">Isoliersysteme</a>
+        <a href="./pages/category.html?slug=epoxy-systems" class="mobile-nav__sublink" data-i18n="nav.epoxy">Epoxidsysteme</a>
+        <a href="./pages/category.html?slug=microcement" class="mobile-nav__sublink" data-i18n="nav.microcement">Mikrozement</a>
+        <a href="./pages/category.html?slug=concrete-treatments" class="mobile-nav__sublink" data-i18n="nav.concrete">Betonbehandlungen</a>
+      </div>
+      <a href="./pages/agent.html" class="mobile-nav__link" data-i18n="nav.agent">Agent werden</a>
+      <a href="./pages/academy.html" class="mobile-nav__link" data-i18n="nav.academy">Akademie</a>
+      <a href="./pages/blog.html" class="mobile-nav__link" data-i18n="nav.blog">Blog</a>
+      <a href="./pages/contact.html" class="mobile-nav__link" data-i18n="nav.contact">Kontakt</a>
+    </div>
+  </nav>
+
+  <!-- Page Content -->
+  <main class="page-content">
+    <!-- Hero Section -->
+    <section class="hero">
+      <div class="hero__pattern"></div>
+      <div class="container">
+        <div class="hero__grid">
+          <div class="hero__content fade-in-left">
+            <span class="hero__overline" data-i18n="hero.overline">Bauchemie &amp; Industrielle Lösungen</span>
+            <h1 class="hero__title">
+              <span data-i18n="hero.title_1">Industrielle Lösungen</span> <br>
+              <span data-i18n="hero.title_2">für die Zukunft</span>
+            </h1>
+            <p class="hero__desc" data-i18n="hero.desc">
+              Innovative Bauchemie und Industrielösungen für anspruchsvolle Projekte. Qualität, die überzeugt — seit über einem Jahrzehnt.
+            </p>
+            <div class="hero__actions btn-group">
+              <a href="./pages/products.html" class="btn btn--secondary btn--lg" data-i18n="hero.cta_primary">Produkte entdecken</a>
+              <a href="./pages/about.html" class="btn btn--outline-white btn--lg" data-i18n="hero.cta_secondary">Mehr erfahren</a>
+            </div>
+            
+            <div class="hero__stats">
+              <div>
+                <div class="hero__stat-number" data-counter="500" data-counter-suffix="+">0</div>
+                <div class="hero__stat-label" data-i18n="hero.stat_1_label">Projekte</div>
+              </div>
+              <div>
+                <div class="hero__stat-number" data-counter="15" data-counter-suffix="+">0</div>
+                <div class="hero__stat-label" data-i18n="hero.stat_2_label">Jahre Erfahrung</div>
+              </div>
+              <div>
+                <div class="hero__stat-number" data-counter="30" data-counter-suffix="+">0</div>
+                <div class="hero__stat-label" data-i18n="hero.stat_3_label">Länder</div>
+              </div>
+            </div>
+          </div>
+          
+          <div class="hero__visual scale-in">
+            <div class="hero__image-wrapper">
+              <img src="https://images.unsplash.com/photo-1541888946425-d81bb19240f5?q=80&w=600&auto=format&fit=crop" alt="Industrial construction site with engineers" class="hero__image" width="600" height="400">
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="hero__scroll">
+        <span data-i18n="hero.scroll">Nach unten scrollen</span>
+        <div class="hero__scroll-line"></div>
+      </div>
+    </section>
+
+    <!-- About Section -->
+    <section class="about-preview section">
+      <div class="container">
+        <div class="about-preview__content">
+          <div class="about-preview__image fade-in-left">
+            <img src="https://images.unsplash.com/photo-1581091226825-a6a2a5aee158?q=80&w=600&auto=format&fit=crop" alt="High-tech manufacturing facility" width="600" height="400">
+            <div class="about-preview__badge">
+              <div class="about-preview__badge-number" data-counter="15" data-counter-suffix="+">0</div>
+              <div class="about-preview__badge-text" data-i18n="about_preview.badge_text">Jahre Erfahrung</div>
+            </div>
+          </div>
+          <div class="about-preview__text fade-in-right">
+            <span class="text-overline" data-i18n="about_preview.overline">Über uns</span>
+            <h2 data-i18n="about_preview.title">Führender Anbieter industrieller Lösungen</h2>
+            <p class="text-lead" data-i18n="about_preview.desc">
+              Seit mehr als einem Jahrzehnt entwickeln und produzieren wir hochwertige Bauchemikalien und Industrielösungen, die den höchsten europäischen Standards entsprechen.
+            </p>
+            <div class="about-preview__features">
+              <div class="about-feature">
+                <svg class="about-feature__icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="20 6 9 17 4 12"></polyline></svg>
+                <span class="about-feature__text" data-i18n="about_preview.feature_1">DIN/EN-zertifiziert</span>
+              </div>
+              <div class="about-feature">
+                <svg class="about-feature__icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="20 6 9 17 4 12"></polyline></svg>
+                <span class="about-feature__text" data-i18n="about_preview.feature_2">Umweltfreundlich</span>
+              </div>
+              <div class="about-feature">
+                <svg class="about-feature__icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="20 6 9 17 4 12"></polyline></svg>
+                <span class="about-feature__text" data-i18n="about_preview.feature_3">Innovationsführer</span>
+              </div>
+              <div class="about-feature">
+                <svg class="about-feature__icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="20 6 9 17 4 12"></polyline></svg>
+                <span class="about-feature__text" data-i18n="about_preview.feature_4">Globale Reichweite</span>
+              </div>
+            </div>
+            <a href="./pages/about.html" class="btn btn--primary" data-i18n="about_preview.cta">Mehr über uns</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Main Product Categories -->
+    <section class="categories-section section">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-header__overline" data-i18n="categories_section.overline">Unsere Produkte</span>
+          <h2 class="section-header__title" data-i18n="categories_section.title">Produktkategorien</h2>
+          <p class="section-header__desc" data-i18n="categories_section.desc">Entdecken Sie unser umfassendes Sortiment an Bauchemikalien und Industrielösungen.</p>
+        </div>
+        
+        <div class="grid grid--4 fade-in">
+          <!-- Category 1 -->
+          <div class="category-card">
+            <div class="category-card__image">
+              <img src="https://images.unsplash.com/photo-1517646287270-a5a9ca602e5c?q=80&w=400&auto=format&fit=crop" alt="Insulation systems application" width="400" height="250">
+              <span class="category-card__count">5 Prod.</span>
+            </div>
+            <div class="category-card__body">
+              <h3 class="category-card__title" data-i18n="nav.insulation">Isoliersysteme</h3>
+              <p class="category-card__desc">Acryl, Astromic und Nano-Keramik-Lösungen.</p>
+              <a href="./pages/category.html?slug=insulation-systems" class="category-card__link">
+                <span data-i18n="categories_section.view_products">Produkte ansehen</span>
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="5" y1="12" x2="19" y2="12"></line><polyline points="12 5 19 12 12 19"></polyline></svg>
+              </a>
+            </div>
+          </div>
+          <!-- Category 2 -->
+          <div class="category-card">
+            <div class="category-card__image">
+              <img src="https://images.unsplash.com/photo-1562259949-e8e7689d7828?q=80&w=400&auto=format&fit=crop" alt="Epoxy flooring application" width="400" height="250">
+              <span class="category-card__count">6 Prod.</span>
+            </div>
+            <div class="category-card__body">
+              <h3 class="category-card__title" data-i18n="nav.epoxy">Epoxidsysteme</h3>
+              <p class="category-card__desc">Kristallklar, farbig, Metallic und 3D-Effekte.</p>
+              <a href="./pages/category.html?slug=epoxy-systems" class="category-card__link">
+                <span data-i18n="categories_section.view_products">Produkte ansehen</span>
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="5" y1="12" x2="19" y2="12"></line><polyline points="12 5 19 12 12 19"></polyline></svg>
+              </a>
+            </div>
+          </div>
+          <!-- Category 3 -->
+          <div class="category-card">
+            <div class="category-card__image">
+              <img src="https://images.unsplash.com/photo-1600585154340-be6161a56a0c?q=80&w=400&auto=format&fit=crop" alt="Modern seamless microcement wall" width="400" height="250">
+              <span class="category-card__count">3 Prod.</span>
+            </div>
+            <div class="category-card__body">
+              <h3 class="category-card__title" data-i18n="nav.microcement">Mikrozement</h3>
+              <p class="category-card__desc">Mikrozement, Grundierungen und Schutzsysteme.</p>
+              <a href="./pages/category.html?slug=microcement" class="category-card__link">
+                <span data-i18n="categories_section.view_products">Produkte ansehen</span>
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="5" y1="12" x2="19" y2="12"></line><polyline points="12 5 19 12 12 19"></polyline></svg>
+              </a>
+            </div>
+          </div>
+          <!-- Category 4 -->
+          <div class="category-card">
+            <div class="category-card__image">
+              <img src="https://images.unsplash.com/photo-1590069261209-f8e9b8642343?q=80&w=400&auto=format&fit=crop" alt="Concrete structures in engineering" width="400" height="250">
+              <span class="category-card__count">6 Prod.</span>
+            </div>
+            <div class="category-card__body">
+              <h3 class="category-card__title" data-i18n="nav.concrete">Betonbehandlungen</h3>
+              <p class="category-card__desc">Zusätze, Beschichtungen und Schutzmittel.</p>
+              <a href="./pages/category.html?slug=concrete-treatments" class="category-card__link">
+                <span data-i18n="categories_section.view_products">Produkte ansehen</span>
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="5" y1="12" x2="19" y2="12"></line><polyline points="12 5 19 12 12 19"></polyline></svg>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Academy Overview -->
+    <section class="academy-preview section">
+      <div class="container">
+        <div class="layout-split">
+          <div class="fade-in-left">
+            <span class="text-overline" data-i18n="academy_section.overline">Akademie</span>
+            <h2 data-i18n="academy_section.title">Wissen teilen, Exzellenz fördern</h2>
+            <p class="text-lead" data-i18n="academy_section.desc">Kostenlose Fachkurse für Ingenieure, Techniker und Branchenexperten.</p>
+            <p class="mb-8">Wir glauben an den Wissenstransfer als Schlüssel zum langfristigen Projekterfolg. Entdecken Sie praxisnahe Schulungen und theoretische Grundlagen.</p>
+            <a href="./pages/academy.html" class="btn btn--primary" data-i18n="academy_section.cta">Alle Kurse entdecken</a>
+          </div>
+          <div class="fade-in-right">
+            <!-- Featured Course Card -->
+            <div class="course-card">
+              <div class="course-card__image">
+                <img src="https://images.unsplash.com/photo-1434030216411-0b793f4b4173?q=80&w=600&auto=format&fit=crop" alt="Dr. Michael Weber conducting an engineering lecture" width="600" height="340">
+                <span class="course-card__free" data-i18n="academy_section.free">Kostenlos</span>
+              </div>
+              <div class="course-card__body">
+                <span class="course-card__category">EPOXY SCIENCE</span>
+                <h3 class="course-card__title">Grundlagen der Epoxidharztechnologie</h3>
+                <p class="course-card__desc">Umfassender Kurs über die Chemie, Anwendung und Verarbeitung von Epoxidharzsystemen.</p>
+                <div class="course-card__meta">
+                  <div class="course-card__meta-item">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"></circle><polyline points="12 6 12 12 16 14"></polyline></svg>
+                    <span>12h</span>
+                  </div>
+                  <div class="course-card__meta-item">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"></path><circle cx="12" cy="7" r="4"></circle></svg>
+                    <span>Dr. Michael Weber</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Become Our Agent Section -->
+    <section class="agent-preview section">
+      <div class="container">
+        <div class="agent-preview__content">
+          <div class="fade-in-left">
+            <span class="text-overline" data-i18n="agent_section.overline">Partnerschaft</span>
+            <h2 class="agent-preview__title" data-i18n="agent_section.title">Werden Sie unser Vertriebspartner</h2>
+            <p class="agent-preview__desc" data-i18n="agent_section.desc">Schließen Sie sich unserem europäischen Vertriebsnetzwerk an und profitieren Sie von exklusiven Vorteilen.</p>
+            <div class="agent-preview__benefits mb-8">
+              <div class="agent-benefit">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="20 6 9 17 4 12"></polyline></svg>
+                <span data-i18n="agent_section.benefit_1">Exklusive Gebietsrechte</span>
+              </div>
+              <div class="agent-benefit">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="20 6 9 17 4 12"></polyline></svg>
+                <span data-i18n="agent_section.benefit_2">Umfassende Schulung</span>
+              </div>
+              <div class="agent-benefit">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="20 6 9 17 4 12"></polyline></svg>
+                <span data-i18n="agent_section.benefit_3">Marketing-Unterstützung</span>
+              </div>
+              <div class="agent-benefit">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="20 6 9 17 4 12"></polyline></svg>
+                <span data-i18n="agent_section.benefit_4">Technischer Support</span>
+              </div>
+            </div>
+            <a href="./pages/agent.html" class="btn btn--secondary btn--lg" data-i18n="agent_section.cta">Jetzt bewerben</a>
+          </div>
+          
+          <div class="fade-in-right">
+            <img src="https://images.unsplash.com/photo-1454165804606-c3d57bc86b40?q=80&w=600&auto=format&fit=crop" alt="Contract signing and handshake" class="rounded-lg shadow-xl" width="600" height="400">
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Certifications & Partners -->
+    <section class="certs-section section--sm">
+      <div class="container">
+        <div class="section-header section-header--left mb-8">
+          <span class="section-header__overline" data-i18n="certs_section.overline">Qualität</span>
+          <h2 class="section-header__title" data-i18n="certs_section.title">Zertifizierungen &amp; Standards</h2>
+        </div>
+        <div class="certs-grid fade-in">
+          <div class="cert-item">ISO 9001</div>
+          <div class="cert-item">ISO 14001</div>
+          <div class="cert-item">CE Mark</div>
+          <div class="cert-item">DIN EN</div>
+          <div class="cert-item">LEED</div>
+        </div>
+      </div>
+    </section>
+
+    <section class="partners-section section--sm">
+      <div class="container">
+        <div class="section-header section-header--left mb-8">
+          <span class="section-header__overline" data-i18n="partners_section.overline">Vertrauen</span>
+          <h2 class="section-header__title" data-i18n="partners_section.title">Unsere Partner</h2>
+        </div>
+        <div class="partners-grid fade-in">
+          <span class="partner-logo">BASF</span>
+          <span class="partner-logo">Sika</span>
+          <span class="partner-logo">Henkel</span>
+          <span class="partner-logo">Mapei</span>
+          <span class="partner-logo">Wacker</span>
+        </div>
+      </div>
+    </section>
+
+    <!-- Latest Articles -->
+    <section class="articles-preview section">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-header__overline" data-i18n="articles_section.overline">Blog</span>
+          <h2 class="section-header__title" data-i18n="articles_section.title">Neueste Artikel</h2>
+          <p class="section-header__desc" data-i18n="articles_section.desc">Brancheneinblicke, technische Publikationen und Unternehmensnachrichten.</p>
+        </div>
+        
+        <div class="grid grid--3 fade-in">
+          <!-- Article 1 -->
+          <div class="article-card">
+            <div class="article-card__image">
+              <img src="https://images.unsplash.com/photo-1504307651254-35680f356dfd?q=80&w=400&auto=format&fit=crop" alt="Sustainable insulation installation" width="400" height="250">
+            </div>
+            <div class="article-card__body">
+              <span class="article-card__category">INDUSTRY INSIGHTS</span>
+              <h3 class="article-card__title">Die Zukunft der Wärmedämmung</h3>
+              <p class="article-card__excerpt">Neue Technologien revolutionieren die Isolierbranche durch ultra-hocheffiziente Materialien.</p>
+              <div class="article-card__footer">
+                <span class="article-card__date">10. Juni 2026</span>
+                <a href="./pages/article.html?slug=future-of-insulation" class="text-link text-link--underline" data-i18n="articles_section.read_more">Weiterlesen</a>
+              </div>
+            </div>
+          </div>
+          <!-- Article 2 -->
+          <div class="article-card">
+            <div class="article-card__image">
+              <img src="https://images.unsplash.com/photo-1531834685032-c34bf0d84c77?q=80&w=400&auto=format&fit=crop" alt="Applying epoxy floor coatings" width="400" height="250">
+            </div>
+            <div class="article-card__body">
+              <span class="article-card__category">ARTICLES</span>
+              <h3 class="article-card__title">Epoxidbodentrends 2026</h3>
+              <p class="article-card__excerpt">Die neuesten Trends in der Epoxidboden-Gestaltung, von 3D-Böden bis zu Metallic-Marmoreffekten.</p>
+              <div class="article-card__footer">
+                <span class="article-card__date">05. Juni 2026</span>
+                <a href="./pages/article.html?slug=epoxy-flooring-trends" class="text-link text-link--underline" data-i18n="articles_section.read_more">Weiterlesen</a>
+              </div>
+            </div>
+          </div>
+          <!-- Article 3 -->
+          <div class="article-card">
+            <div class="article-card__image">
+              <img src="https://images.unsplash.com/photo-1590381105924-c72589b9ef3f?q=80&w=400&auto=format&fit=crop" alt="Microcement wall details" width="400" height="250">
+            </div>
+            <div class="article-card__body">
+              <span class="article-card__category">TECHNICAL PUBLICATIONS</span>
+              <h3 class="article-card__title">Mikrozement Anwendungsleitfaden</h3>
+              <p class="article-card__excerpt">Schritt-für-Schritt-Anleitung für perfekte, nahtlose Mikrozement-Oberflächen an Wänden und Böden.</p>
+              <div class="article-card__footer">
+                <span class="article-card__date">28. Mai 2026</span>
+                <a href="./pages/article.html?slug=microcement-guide" class="text-link text-link--underline" data-i18n="articles_section.read_more">Weiterlesen</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Contact CTA -->
+    <section class="cta-section">
+      <div class="container">
+        <span class="cta-section__overline" data-i18n="cta_section.overline">Kontakt</span>
+        <h2 class="cta-section__title" data-i18n="cta_section.title">Bereit für Ihr nächstes Projekt?</h2>
+        <p class="cta-section__desc" data-i18n="cta_section.desc">Kontaktieren Sie uns für eine professionelle Beratung. Unser Expertenteam steht Ihnen zur Verfügung.</p>
+        <div class="cta-section__actions btn-group">
+          <a href="./pages/contact.html" class="btn btn--secondary btn--lg" data-i18n="cta_section.cta_primary">Kontaktieren Sie uns</a>
+          <a href="./pages/products.html" class="btn btn--outline-white btn--lg" data-i18n="cta_section.cta_secondary">Produkte ansehen</a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- Footer -->
+  <footer id="site-footer" class="site-footer">
+    <div class="footer-main">
+      <div class="container">
+        <div class="footer-grid">
+          <!-- Footer Brand -->
+          <div class="footer-brand">
+            <div class="footer-brand__logo">
+              <div class="footer-brand__icon">ISS</div>
+              <span class="footer-brand__name">ISS SOLUTIONS</span>
+            </div>
+            <p class="footer-brand__desc" data-i18n="footer.desc">Europas führender Anbieter für Bauchemie und industrielle Lösungen. Innovation, Qualität und Nachhaltigkeit.</p>
+            <div class="footer-social">
+              <a href="#" class="footer-social__link" aria-label="LinkedIn">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"></path><rect x="2" y="9" width="4" height="12"></rect><circle cx="4" cy="4" r="2"></circle></svg>
+              </a>
+              <a href="#" class="footer-social__link" aria-label="YouTube">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22.54 6.42a2.78 2.78 0 0 0-1.94-2C18.88 4 12 4 12 4s-6.88 0-8.6.46a2.78 2.78 0 0 0-1.94 2A29 29 0 0 0 1 11.75a29 29 0 0 0 .46 5.33A2.78 2.78 0 0 0 3.4 19c1.72.46 8.6.46 8.6.46s6.88 0 8.6-.46a2.78 2.78 0 0 0 1.94-2 29 29 0 0 0 .46-5.25 29 29 0 0 0-.46-5.33z"></path><polygon points="9.75 15.02 15.5 11.75 9.75 8.48 9.75 15.02"></polygon></svg>
+              </a>
+            </div>
+          </div>
+          <!-- Quick Links -->
+          <div class="footer-col">
+            <h4 class="footer-col__title" data-i18n="footer.quick_links">Schnellzugriff</h4>
+            <ul class="footer-col__list">
+              <li><a href="./pages/about.html" class="footer-col__link" data-i18n="nav.about">Über uns</a></li>
+              <li><a href="./pages/agent.html" class="footer-col__link" data-i18n="nav.agent">Agent werden</a></li>
+              <li><a href="./pages/academy.html" class="footer-col__link" data-i18n="nav.academy">Akademie</a></li>
+              <li><a href="./pages/blog.html" class="footer-col__link" data-i18n="nav.blog">Blog</a></li>
+            </ul>
+          </div>
+          <!-- Products -->
+          <div class="footer-col">
+            <h4 class="footer-col__title" data-i18n="footer.products">Produkte</h4>
+            <ul class="footer-col__list">
+              <li><a href="./pages/category.html?slug=insulation-systems" class="footer-col__link" data-i18n="nav.insulation">Isoliersysteme</a></li>
+              <li><a href="./pages/category.html?slug=epoxy-systems" class="footer-col__link" data-i18n="nav.epoxy">Epoxidsysteme</a></li>
+              <li><a href="./pages/category.html?slug=microcement" class="footer-col__link" data-i18n="nav.microcement">Mikrozement</a></li>
+              <li><a href="./pages/category.html?slug=concrete-treatments" class="footer-col__link" data-i18n="nav.concrete">Betonbehandlungen</a></li>
+            </ul>
+          </div>
+          <!-- Contact -->
+          <div class="footer-col">
+            <h4 class="footer-col__title" data-i18n="footer.contact">Kontakt</h4>
+            <div class="footer-contact">
+              <div class="footer-contact__item">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path><circle cx="12" cy="10" r="3"></circle></svg>
+                <span>Industriestraße 42, 10115 Berlin</span>
+              </div>
+              <div class="footer-contact__item">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path><polyline points="22,6 12,13 2,6"></polyline></svg>
+                <span>info@iss-solutions.eu</span>
+              </div>
+              <div class="footer-contact__item">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"></path></svg>
+                <span>+49 30 1234 5678</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Footer Bottom -->
+    <div class="footer-bottom">
+      <div class="container">
+        <span class="footer-copyright">&copy; <span data-year>2026</span> ISS SOLUTIONS. <span data-i18n="footer.copyright">Alle Rechte vorbehalten.</span></span>
+        <div class="footer-legal">
+          <a href="#" class="footer-legal__link" data-i18n="footer.privacy">Datenschutzerklärung</a>
+          <a href="#" class="footer-legal__link" data-i18n="footer.terms">AGB</a>
+          <a href="#" class="footer-legal__link" data-i18n="footer.imprint">Impressum</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Scripts -->
+  <script type="module" src="./js/core/app.js"></script>
+</body>
+</html>

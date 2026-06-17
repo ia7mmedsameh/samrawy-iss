@@ -1,0 +1,170 @@
+{
+  "meta": {
+    "lang": "en",
+    "dir": "ltr"
+  },
+  "nav": {
+    "home": "Home",
+    "company": "ISS",
+    "about": "About Us",
+    "chairman": "Chairman's Message",
+    "policies": "Our Policies",
+    "certifications": "Certifications",
+    "hr": "Human Resources",
+    "products": "Products",
+    "insulation": "Insulation Systems",
+    "epoxy": "Epoxy Systems",
+    "microcement": "Microcement",
+    "concrete": "Concrete Treatments",
+    "agent": "Become Our Agent",
+    "academy": "Academy",
+    "blog": "Blog & News",
+    "contact": "Contact"
+  },
+  "hero": {
+    "overline": "Europe's Leading Construction Chemical Company",
+    "title_1": "Industrial Solutions",
+    "title_2": "for the Future",
+    "desc": "Innovative construction chemicals and industrial solutions for demanding projects. Quality that convinces — for over a decade.",
+    "cta_primary": "Explore Products",
+    "cta_secondary": "Learn More",
+    "stat_1_number": "500+",
+    "stat_1_label": "Projects",
+    "stat_2_number": "15+",
+    "stat_2_label": "Years Experience",
+    "stat_3_number": "30+",
+    "stat_3_label": "Countries",
+    "scroll": "Scroll down"
+  },
+  "about_preview": {
+    "overline": "About Us",
+    "title": "Leading Provider of Industrial Solutions",
+    "desc": "For more than a decade, we have been developing and producing high-quality construction chemicals and industrial solutions that meet the highest European standards.",
+    "feature_1": "DIN/EN Certified",
+    "feature_2": "Eco-Friendly",
+    "feature_3": "Innovation Leader",
+    "feature_4": "Global Reach",
+    "cta": "More About Us",
+    "badge_number": "15+",
+    "badge_text": "Years Experience"
+  },
+  "categories_section": {
+    "overline": "Our Products",
+    "title": "Product Categories",
+    "desc": "Discover our comprehensive range of construction chemicals and industrial solutions.",
+    "view_products": "View Products"
+  },
+  "academy_section": {
+    "overline": "Academy",
+    "title": "Sharing Knowledge, Fostering Excellence",
+    "desc": "Free professional courses for engineers, technicians, and industry experts.",
+    "cta": "Explore All Courses",
+    "free": "Free",
+    "enroll": "Enroll Now"
+  },
+  "agent_section": {
+    "overline": "Partnership",
+    "title": "Become Our Distribution Partner",
+    "desc": "Join our European distribution network and benefit from exclusive advantages.",
+    "benefit_1": "Exclusive Territory Rights",
+    "benefit_2": "Comprehensive Training",
+    "benefit_3": "Marketing Support",
+    "benefit_4": "Technical Support",
+    "cta": "Apply Now"
+  },
+  "certs_section": {
+    "overline": "Quality",
+    "title": "Certifications & Standards"
+  },
+  "partners_section": {
+    "overline": "Trust",
+    "title": "Our Partners"
+  },
+  "articles_section": {
+    "overline": "Blog",
+    "title": "Latest Articles",
+    "desc": "Industry insights, technical publications, and company news.",
+    "read_more": "Read More",
+    "view_all": "All Articles"
+  },
+  "cta_section": {
+    "overline": "Contact",
+    "title": "Ready for Your Next Project?",
+    "desc": "Contact us for professional consultation. Our expert team is at your service.",
+    "cta_primary": "Contact Us",
+    "cta_secondary": "View Products"
+  },
+  "footer": {
+    "desc": "Europe's leading provider of construction chemicals and industrial solutions. Innovation, quality, and sustainability.",
+    "quick_links": "Quick Links",
+    "products": "Products",
+    "contact": "Contact",
+    "privacy": "Privacy Policy",
+    "terms": "Terms & Conditions",
+    "imprint": "Legal Notice",
+    "copyright": "All rights reserved."
+  },
+  "common": {
+    "learn_more": "Learn More",
+    "read_more": "Read More",
+    "view_all": "View All",
+    "back": "Back",
+    "search": "Search",
+    "search_placeholder": "Search...",
+    "loading": "Loading...",
+    "no_results": "No results found",
+    "submit": "Submit",
+    "send": "Send",
+    "download": "Download",
+    "close": "Close",
+    "next": "Next",
+    "previous": "Previous",
+    "all": "All",
+    "duration": "Duration",
+    "level": "Level",
+    "instructor": "Instructor",
+    "lessons": "Lessons",
+    "beginner": "Beginner",
+    "intermediate": "Intermediate",
+    "advanced": "Advanced"
+  },
+  "contact_page": {
+    "title": "Contact Us",
+    "desc": "We look forward to hearing from you.",
+    "form_name": "Full Name",
+    "form_email": "Email Address",
+    "form_phone": "Phone Number",
+    "form_company": "Company",
+    "form_subject": "Subject",
+    "form_message": "Your Message",
+    "form_submit": "Send Message",
+    "info_address": "Address",
+    "info_email": "Email",
+    "info_phone": "Phone",
+    "info_hours": "Business Hours"
+  },
+  "agent_page": {
+    "title": "Become Our Agent",
+    "desc": "Join our growing network.",
+    "why_title": "Why Partner With Us?",
+    "apply_title": "Apply Now",
+    "form_name": "Full Name",
+    "form_email": "Email",
+    "form_phone": "Phone",
+    "form_company": "Company",
+    "form_country": "Country",
+    "form_experience": "Industry Experience",
+    "form_message": "Additional Information",
+    "form_submit": "Submit Application"
+  },
+  "product_detail": {
+    "features": "Features",
+    "benefits": "Benefits",
+    "applications": "Applications",
+    "specifications": "Technical Specifications",
+    "downloads": "Downloads",
+    "datasheet": "Datasheet",
+    "technical_sheet": "Technical Sheet",
+    "related": "Related Products"
+  }
+}

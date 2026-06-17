@@ -1,0 +1,170 @@
+{
+  "meta": {
+    "lang": "de",
+    "dir": "ltr"
+  },
+  "nav": {
+    "home": "Startseite",
+    "company": "ISS",
+    "about": "Über uns",
+    "chairman": "Botschaft des Vorsitzenden",
+    "policies": "Unsere Richtlinien",
+    "certifications": "Zertifizierungen",
+    "hr": "Personalwesen",
+    "products": "Produkte",
+    "insulation": "Isoliersysteme",
+    "epoxy": "Epoxidsysteme",
+    "microcement": "Mikrozement",
+    "concrete": "Betonbehandlungen",
+    "agent": "Unser Agent werden",
+    "academy": "Akademie",
+    "blog": "Blog & Neuigkeiten",
+    "contact": "Kontakt"
+  },
+  "hero": {
+    "overline": "Europas führendes Unternehmen für Bauchemie",
+    "title_1": "Industrielle Lösungen",
+    "title_2": "für die Zukunft",
+    "desc": "Innovative Bauchemie und Industrielösungen für anspruchsvolle Projekte. Qualität, die überzeugt — seit über einem Jahrzehnt.",
+    "cta_primary": "Produkte entdecken",
+    "cta_secondary": "Mehr erfahren",
+    "stat_1_number": "500+",
+    "stat_1_label": "Projekte",
+    "stat_2_number": "15+",
+    "stat_2_label": "Jahre Erfahrung",
+    "stat_3_number": "30+",
+    "stat_3_label": "Länder",
+    "scroll": "Nach unten scrollen"
+  },
+  "about_preview": {
+    "overline": "Über uns",
+    "title": "Führender Anbieter industrieller Lösungen",
+    "desc": "Seit mehr als einem Jahrzehnt entwickeln und produzieren wir hochwertige Bauchemikalien und Industrielösungen, die den höchsten europäischen Standards entsprechen.",
+    "feature_1": "DIN/EN-zertifiziert",
+    "feature_2": "Umweltfreundlich",
+    "feature_3": "Innovationsführer",
+    "feature_4": "Globale Reichweite",
+    "cta": "Mehr über uns",
+    "badge_number": "15+",
+    "badge_text": "Jahre Erfahrung"
+  },
+  "categories_section": {
+    "overline": "Unsere Produkte",
+    "title": "Produktkategorien",
+    "desc": "Entdecken Sie unser umfassendes Sortiment an Bauchemikalien und Industrielösungen.",
+    "view_products": "Produkte ansehen"
+  },
+  "academy_section": {
+    "overline": "Akademie",
+    "title": "Wissen teilen, Exzellenz fördern",
+    "desc": "Kostenlose Fachkurse für Ingenieure, Techniker und Branchenexperten.",
+    "cta": "Alle Kurse entdecken",
+    "free": "Kostenlos",
+    "enroll": "Jetzt anmelden"
+  },
+  "agent_section": {
+    "overline": "Partnerschaft",
+    "title": "Werden Sie unser Vertriebspartner",
+    "desc": "Schließen Sie sich unserem europäischen Vertriebsnetzwerk an und profitieren Sie von exklusiven Vorteilen.",
+    "benefit_1": "Exklusive Gebietsrechte",
+    "benefit_2": "Umfassende Schulung",
+    "benefit_3": "Marketing-Unterstützung",
+    "benefit_4": "Technischer Support",
+    "cta": "Jetzt bewerben"
+  },
+  "certs_section": {
+    "overline": "Qualität",
+    "title": "Zertifizierungen & Standards"
+  },
+  "partners_section": {
+    "overline": "Vertrauen",
+    "title": "Unsere Partner"
+  },
+  "articles_section": {
+    "overline": "Blog",
+    "title": "Neueste Artikel",
+    "desc": "Brancheneinblicke, technische Publikationen und Unternehmensnachrichten.",
+    "read_more": "Weiterlesen",
+    "view_all": "Alle Artikel"
+  },
+  "cta_section": {
+    "overline": "Kontakt",
+    "title": "Bereit für Ihr nächstes Projekt?",
+    "desc": "Kontaktieren Sie uns für eine professionelle Beratung. Unser Expertenteam steht Ihnen zur Verfügung.",
+    "cta_primary": "Kontaktieren Sie uns",
+    "cta_secondary": "Produkte ansehen"
+  },
+  "footer": {
+    "desc": "Europas führender Anbieter für Bauchemie und industrielle Lösungen. Innovation, Qualität und Nachhaltigkeit.",
+    "quick_links": "Schnellzugriff",
+    "products": "Produkte",
+    "contact": "Kontakt",
+    "privacy": "Datenschutz",
+    "terms": "AGB",
+    "imprint": "Impressum",
+    "copyright": "Alle Rechte vorbehalten."
+  },
+  "common": {
+    "learn_more": "Mehr erfahren",
+    "read_more": "Weiterlesen",
+    "view_all": "Alle ansehen",
+    "back": "Zurück",
+    "search": "Suchen",
+    "search_placeholder": "Suchen...",
+    "loading": "Wird geladen...",
+    "no_results": "Keine Ergebnisse gefunden",
+    "submit": "Absenden",
+    "send": "Senden",
+    "download": "Herunterladen",
+    "close": "Schließen",
+    "next": "Weiter",
+    "previous": "Zurück",
+    "all": "Alle",
+    "duration": "Dauer",
+    "level": "Niveau",
+    "instructor": "Dozent",
+    "lessons": "Lektionen",
+    "beginner": "Anfänger",
+    "intermediate": "Fortgeschritten",
+    "advanced": "Experte"
+  },
+  "contact_page": {
+    "title": "Kontaktieren Sie uns",
+    "desc": "Wir freuen uns auf Ihre Nachricht.",
+    "form_name": "Vollständiger Name",
+    "form_email": "E-Mail-Adresse",
+    "form_phone": "Telefonnummer",
+    "form_company": "Unternehmen",
+    "form_subject": "Betreff",
+    "form_message": "Ihre Nachricht",
+    "form_submit": "Nachricht senden",
+    "info_address": "Adresse",
+    "info_email": "E-Mail",
+    "info_phone": "Telefon",
+    "info_hours": "Öffnungszeiten"
+  },
+  "agent_page": {
+    "title": "Werden Sie unser Agent",
+    "desc": "Schließen Sie sich unserem wachsenden Netzwerk an.",
+    "why_title": "Warum mit uns zusammenarbeiten?",
+    "apply_title": "Jetzt bewerben",
+    "form_name": "Vollständiger Name",
+    "form_email": "E-Mail",
+    "form_phone": "Telefon",
+    "form_company": "Unternehmen",
+    "form_country": "Land",
+    "form_experience": "Branchenerfahrung",
+    "form_message": "Zusätzliche Informationen",
+    "form_submit": "Bewerbung absenden"
+  },
+  "product_detail": {
+    "features": "Eigenschaften",
+    "benefits": "Vorteile",
+    "applications": "Anwendungen",
+    "specifications": "Technische Daten",
+    "downloads": "Downloads",
+    "datasheet": "Datenblatt",
+    "technical_sheet": "Technisches Blatt",
+    "related": "Verwandte Produkte"
+  }
+}

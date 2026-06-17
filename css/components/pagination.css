@@ -1,0 +1,58 @@
+/* ============================================
+   PAGINATION — Pagination Component
+   ============================================ */
+
+.pagination {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: var(--space-2);
+  margin-top: var(--space-12);
+}
+
+.pagination__btn {
+  width: 40px;
+  height: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: var(--fs-sm);
+  font-weight: var(--fw-medium);
+  color: var(--neutral-600);
+  border: 1px solid var(--neutral-200);
+  border-radius: var(--radius-md);
+  transition: all var(--duration-fast) var(--ease-default);
+}
+
+.pagination__btn:hover {
+  border-color: var(--primary);
+  color: var(--primary);
+  background: var(--primary-50);
+}
+
+.pagination__btn.is-active {
+  background: var(--primary);
+  border-color: var(--primary);
+  color: var(--white);
+}
+
+.pagination__btn:disabled {
+  opacity: 0.4;
+  cursor: not-allowed;
+  pointer-events: none;
+}
+
+.pagination__btn svg {
+  width: 18px;
+  height: 18px;
+}
+
+.pagination__ellipsis {
+  width: 40px;
+  height: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: var(--fs-sm);
+  color: var(--neutral-400);
+}

@@ -1,0 +1,88 @@
+/* ============================================
+   STATS — Counter / Stats Section
+   ============================================ */
+
+.stats-section {
+  background: var(--white);
+  padding: var(--space-16) 0;
+  position: relative;
+}
+
+.stats-section::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 1px;
+  background: linear-gradient(90deg, transparent, var(--neutral-200), transparent);
+}
+
+.stats-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: var(--space-8);
+}
+
+.stat-item {
+  text-align: center;
+  padding: var(--space-6);
+  position: relative;
+}
+
+.stat-item:not(:last-child)::after {
+  content: '';
+  position: absolute;
+  right: 0;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 1px;
+  height: 60px;
+  background: var(--neutral-200);
+}
+
+.stat-item__number {
+  font-family: var(--font-heading);
+  font-size: var(--fs-4xl);
+  font-weight: var(--fw-extrabold);
+  color: var(--primary);
+  line-height: 1;
+  margin-bottom: var(--space-2);
+}
+
+.stat-item__number span {
+  color: var(--secondary);
+}
+
+.stat-item__label {
+  font-size: var(--fs-sm);
+  color: var(--neutral-500);
+  font-weight: var(--fw-medium);
+}
+
+/* ---- Dark Variant ---- */
+.stats-section--dark {
+  background: var(--primary);
+}
+
+.stats-section--dark .stat-item__number {
+  color: var(--white);
+}
+
+.stats-section--dark .stat-item__label {
+  color: rgba(255, 255, 255, 0.6);
+}
+
+.stats-section--dark .stat-item:not(:last-child)::after {
+  background: rgba(255, 255, 255, 0.1);
+}
+
+@media (max-width: 768px) {
+  .stats-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .stat-item:not(:last-child)::after {
+    display: none;
+  }
+}

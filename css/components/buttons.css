@@ -1,0 +1,181 @@
+/* ============================================
+   BUTTONS — Button System
+   ============================================ */
+
+.btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: var(--space-2);
+  padding: var(--space-3) var(--space-6);
+  font-family: var(--font-primary);
+  font-size: var(--fs-sm);
+  font-weight: var(--fw-semibold);
+  line-height: 1.5;
+  border-radius: var(--radius-md);
+  border: 2px solid transparent;
+  cursor: pointer;
+  white-space: nowrap;
+  transition: all var(--duration-normal) var(--ease-default);
+  position: relative;
+  overflow: hidden;
+}
+
+.btn::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(135deg, rgba(255,255,255,0.15), transparent);
+  opacity: 0;
+  transition: opacity var(--duration-fast) var(--ease-default);
+}
+
+.btn:hover::before {
+  opacity: 1;
+}
+
+.btn:active {
+  transform: scale(0.98);
+}
+
+.btn:focus-visible {
+  outline: 2px solid var(--secondary);
+  outline-offset: 2px;
+}
+
+.btn svg {
+  width: 18px;
+  height: 18px;
+  flex-shrink: 0;
+}
+
+/* ---- Variants ---- */
+.btn--primary {
+  background: var(--primary);
+  color: var(--white);
+}
+
+.btn--primary:hover {
+  background: var(--primary-light);
+  box-shadow: var(--shadow-primary);
+  transform: translateY(-1px);
+}
+
+.btn--secondary {
+  background: var(--secondary);
+  color: var(--white);
+}
+
+.btn--secondary:hover {
+  background: var(--secondary-dark);
+  box-shadow: var(--shadow-secondary);
+  transform: translateY(-1px);
+}
+
+.btn--accent {
+  background: var(--accent);
+  color: var(--white);
+}
+
+.btn--accent:hover {
+  background: var(--accent-dark);
+  transform: translateY(-1px);
+}
+
+.btn--outline {
+  background: transparent;
+  border-color: var(--primary);
+  color: var(--primary);
+}
+
+.btn--outline:hover {
+  background: var(--primary);
+  color: var(--white);
+}
+
+.btn--outline-white {
+  background: transparent;
+  border-color: var(--white);
+  color: var(--white);
+}
+
+.btn--outline-white:hover {
+  background: var(--white);
+  color: var(--primary);
+}
+
+.btn--ghost {
+  background: transparent;
+  color: var(--primary);
+}
+
+.btn--ghost:hover {
+  background: var(--primary-50);
+}
+
+.btn--white {
+  background: var(--white);
+  color: var(--primary);
+}
+
+.btn--white:hover {
+  background: var(--neutral-100);
+  box-shadow: var(--shadow-md);
+  transform: translateY(-1px);
+}
+
+/* ---- Sizes ---- */
+.btn--sm {
+  padding: var(--space-2) var(--space-4);
+  font-size: var(--fs-xs);
+}
+
+.btn--lg {
+  padding: var(--space-4) var(--space-8);
+  font-size: var(--fs-base);
+}
+
+.btn--xl {
+  padding: var(--space-5) var(--space-10);
+  font-size: var(--fs-md);
+  border-radius: var(--radius-lg);
+}
+
+/* ---- Full Width ---- */
+.btn--full {
+  width: 100%;
+}
+
+/* ---- Icon Button ---- */
+.btn--icon {
+  width: 40px;
+  height: 40px;
+  padding: 0;
+}
+
+.btn--icon.btn--sm {
+  width: 32px;
+  height: 32px;
+}
+
+.btn--icon.btn--lg {
+  width: 48px;
+  height: 48px;
+}
+
+/* ---- Button Group ---- */
+.btn-group {
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--space-4);
+}
+
+@media (max-width: 480px) {
+  .btn-group--stack-mobile {
+    flex-direction: column;
+  }
+
+  .btn-group--stack-mobile .btn {
+    width: 100%;
+  }
+}

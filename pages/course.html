@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="de" dir="ltr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Kursdetails | ISS SOLUTIONS</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Outfit:wght@400;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="../css/main.css">
+</head>
+<body class="page">
+  <div id="page-loader" class="loader-overlay">
+    <div class="loader"><div class="loader__spinner"></div></div>
+  </div>
+
+  <header id="site-header" class="site-header">
+    <div class="header-topbar">
+      <div class="container">
+        <div class="topbar-contact">
+          <a href="mailto:info@iss-solutions.eu">info@iss-solutions.eu</a>
+          <a href="tel:+493012345678">+49 30 1234 5678</a>
+        </div>
+        <div class="lang-switcher">
+          <button class="lang-switcher__btn is-active" data-lang="de">DE</button>
+          <button class="lang-switcher__btn" data-lang="en">EN</button>
+        </div>
+      </div>
+    </div>
+    <div class="header-main">
+      <div class="container">
+        <a href="../index.html" class="header-logo">
+          <div class="header-logo__icon">ISS</div>
+          <div class="header-logo__text"><span class="header-logo__name">ISS SOLUTIONS</span></div>
+        </a>
+        <nav class="header-nav">
+          <a href="../index.html" class="nav-link" data-i18n="nav.home">Startseite</a>
+          <div class="nav-item">
+            <a href="#" class="nav-link"><span data-i18n="nav.company">ISS</span></a>
+            <div class="nav-dropdown">
+              <a href="./about.html" class="nav-dropdown__link" data-i18n="nav.about">Über uns</a>
+              <a href="./chairman.html" class="nav-dropdown__link" data-i18n="nav.chairman">Botschaft des Vorsitzenden</a>
+              <a href="./policies.html" class="nav-dropdown__link" data-i18n="nav.policies">Unsere Richtlinien</a>
+              <a href="./certifications.html" class="nav-dropdown__link" data-i18n="nav.certifications">Zertifizierungen</a>
+              <a href="./hr.html" class="nav-dropdown__link" data-i18n="nav.hr">Personalwesen</a>
+            </div>
+          </div>
+          <a href="./products.html" class="nav-link" data-i18n="nav.products">Produkte</a>
+          <a href="./agent.html" class="nav-link" data-i18n="nav.agent">Agent werden</a>
+          <a href="./academy.html" class="nav-link is-active" data-i18n="nav.academy">Akademie</a>
+          <a href="./blog.html" class="nav-link" data-i18n="nav.blog">Blog</a>
+        </nav>
+        <div class="header-cta">
+          <a href="./contact.html" class="btn btn--primary btn--sm" data-i18n="nav.contact">Kontakt</a>
+        </div>
+
+        <!-- Mobile Nav Toggle -->
+        <button id="mobile-toggle" class="mobile-toggle" aria-label="Toggle Navigation">
+          <span class="mobile-toggle__bar"></span>
+          <span class="mobile-toggle__bar"></span>
+          <span class="mobile-toggle__bar"></span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <!-- Mobile Nav Menu -->
+  <div id="mobile-overlay" class="mobile-nav__overlay"></div>
+  <nav id="mobile-nav" class="mobile-nav" aria-label="Mobile Navigation">
+    <div class="mobile-nav__header">
+      <span class="header-logo__name">ISS SOLUTIONS</span>
+      <button id="mobile-close" class="mobile-nav__close" aria-label="Close Navigation">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" width="24" height="24"><line x1="18" y1="6" x2="6" y2="18"></line><line x1="6" y1="6" x2="18" y2="18"></line></svg>
+      </button>
+    </div>
+    <div class="mobile-nav__body">
+      <a href="../index.html" class="mobile-nav__link" data-i18n="nav.home">Startseite</a>
+      <a href="#" class="mobile-nav__link" data-submenu="company">
+        <span data-i18n="nav.company">ISS</span>
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" width="16" height="16"><polyline points="6 9 12 15 18 9"></polyline></svg>
+      </a>
+      <div class="mobile-nav__submenu">
+        <a href="./about.html" class="mobile-nav__sublink" data-i18n="nav.about">Über uns</a>
+        <a href="./chairman.html" class="mobile-nav__sublink" data-i18n="nav.chairman">Botschaft des Vorsitzenden</a>
+        <a href="./policies.html" class="mobile-nav__sublink" data-i18n="nav.policies">Unsere Richtlinien</a>
+        <a href="./certifications.html" class="mobile-nav__sublink" data-i18n="nav.certifications">Zertifizierungen</a>
+        <a href="./hr.html" class="mobile-nav__sublink" data-i18n="nav.hr">Personalwesen</a>
+      </div>
+      <a href="#" class="mobile-nav__link" data-submenu="products">
+        <span data-i18n="nav.products">Produkte</span>
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" width="16" height="16"><polyline points="6 9 12 15 18 9"></polyline></svg>
+      </a>
+      <div class="mobile-nav__submenu">
+        <a href="./category.html?slug=insulation-systems" class="mobile-nav__sublink" data-i18n="nav.insulation">Isoliersysteme</a>
+        <a href="./category.html?slug=epoxy-systems" class="mobile-nav__sublink" data-i18n="nav.epoxy">Epoxidsysteme</a>
+        <a href="./category.html?slug=microcement" class="mobile-nav__sublink" data-i18n="nav.microcement">Mikrozement</a>
+        <a href="./category.html?slug=concrete-treatments" class="mobile-nav__sublink" data-i18n="nav.concrete">Betonbehandlungen</a>
+      </div>
+      <a href="./agent.html" class="mobile-nav__link" data-i18n="nav.agent">Agent werden</a>
+      <a href="./academy.html" class="mobile-nav__link is-active" data-i18n="nav.academy">Akademie</a>
+      <a href="./blog.html" class="mobile-nav__link" data-i18n="nav.blog">Blog</a>
+      <a href="./contact.html" class="mobile-nav__link" data-i18n="nav.contact">Kontakt</a>
+    </div>
+  </nav>
+
+  <main class="page-content">
+    <section class="course-detail">
+      <div class="container">
+        <div class="course-detail__grid">
+          
+          <!-- Course Content Column -->
+          <div class="fade-in-left">
+            <span class="course-card__category" id="course-category">Kategorie</span>
+            <h1 class="course-card__title" id="course-title" style="font-size: var(--fs-3xl); margin-top: var(--space-2); margin-bottom: var(--space-4);">Kursname</h1>
+            <p class="course-card__desc" id="course-desc" style="font-size: var(--fs-base); line-height: var(--lh-relaxed);">Kursbeschreibung</p>
+            
+            <h2 class="h3 mt-12 mb-4" data-i18n="academy_page.curriculum_title">Lehrplan / Curriculum</h2>
+            <div class="accordion" id="course-curriculum" data-accordion-mode="multi">
+              <!-- Modules injected dynamically -->
+            </div>
+          </div>
+
+          <!-- Sidebar Information Card -->
+          <div class="fade-in-right">
+            <div class="course-sidebar">
+              <div class="course-sidebar__body">
+                <div class="course-sidebar__price">
+                  <span class="course-sidebar__free-label" data-i18n="academy_section.free">Kostenlos</span>
+                </div>
+                
+                <div class="course-sidebar__info">
+                  <div class="course-sidebar__info-item">
+                    <span class="course-sidebar__info-label" data-i18n="common.duration">Dauer</span>
+                    <span class="course-sidebar__info-value" id="course-duration">12 Stunden</span>
+                  </div>
+                  <div class="course-sidebar__info-item">
+                    <span class="course-sidebar__info-label" data-i18n="common.level">Niveau</span>
+                    <span class="course-sidebar__info-value" id="course-level">Beginner</span>
+                  </div>
+                  <div class="course-sidebar__info-item">
+                    <span class="course-sidebar__info-label" data-i18n="common.instructor">Dozent</span>
+                    <span class="course-sidebar__info-value" id="course-instructor">Dr. Michael Weber</span>
+                  </div>
+                </div>
+
+                <button class="btn btn--secondary btn--full btn--lg mt-4" data-modal-open="enrollment-modal" data-i18n="academy_section.enroll">Jetzt anmelden</button>
+              </div>
+            </div>
+            
+            <!-- Learning Outcomes -->
+            <div class="outcomes-card mt-8">
+              <h4 class="h4 mb-4" data-i18n="academy_page.outcomes_title">Lernziele</h4>
+              <ul class="outcomes-list" id="course-outcomes">
+                <!-- Injected dynamically -->
+              </ul>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- Enrollment Dialog/Modal -->
+  <div id="enrollment-modal-backdrop" class="modal-backdrop"></div>
+  <div id="enrollment-modal" class="modal">
+    <div class="modal__header">
+      <h3 class="modal__title" data-i18n="academy_section.enroll">Kursanmeldung</h3>
+      <button class="modal__close" data-modal-close aria-label="Close">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" width="24" height="24"><line x1="18" y1="6" x2="6" y2="18"></line><line x1="6" y1="6" x2="18" y2="18"></line></svg>
+      </button>
+    </div>
+    <div class="modal__body">
+      <form id="enrollment-form" novalidate>
+        <div class="form-group">
+          <label for="enroll-name" class="form-label form-label--required" data-i18n="contact_page.form_name">Vollständiger Name</label>
+          <input type="text" id="enroll-name" name="name" class="form-input" required>
+          <span class="form-error">Bitte Namen eingeben.</span>
+        </div>
+        <div class="form-group">
+          <label for="enroll-email" class="form-label form-label--required" data-i18n="contact_page.form_email">E-Mail-Adresse</label>
+          <input type="email" id="enroll-email" name="email" class="form-input" required>
+          <span class="form-error">Bitte E-Mail eingeben.</span>
+        </div>
+        <button type="submit" class="btn btn--secondary btn--full btn--lg" data-i18n="academy_section.enroll">Anmeldung absenden</button>
+      </form>
+    </div>
+  </div>
+
+  <footer id="site-footer" class="site-footer">
+    <div class="footer-bottom">
+      <div class="container">
+        <span class="footer-copyright">&copy; 2026 ISS SOLUTIONS.</span>
+      </div>
+    </div>
+  </footer>
+
+  <script type="module" src="../js/pages/course-detail.js"></script>
+</body>
+</html>

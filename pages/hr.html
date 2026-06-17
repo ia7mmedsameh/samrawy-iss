@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="de" dir="ltr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Personalwesen | ISS SOLUTIONS</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Outfit:wght@400;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="../css/main.css">
+</head>
+<body class="page">
+  <div id="page-loader" class="loader-overlay">
+    <div class="loader"><div class="loader__spinner"></div></div>
+  </div>
+
+  <header id="site-header" class="site-header">
+    <div class="header-topbar">
+      <div class="container">
+        <div class="topbar-contact">
+          <a href="mailto:info@iss-solutions.eu">info@iss-solutions.eu</a>
+          <a href="tel:+493012345678">+49 30 1234 5678</a>
+        </div>
+        <div class="lang-switcher">
+          <button class="lang-switcher__btn is-active" data-lang="de">DE</button>
+          <button class="lang-switcher__btn" data-lang="en">EN</button>
+        </div>
+      </div>
+    </div>
+    <div class="header-main">
+      <div class="container">
+        <a href="../index.html" class="header-logo">
+          <div class="header-logo__icon">ISS</div>
+          <div class="header-logo__text"><span class="header-logo__name">ISS SOLUTIONS</span></div>
+        </a>
+        <nav class="header-nav">
+          <a href="../index.html" class="nav-link" data-i18n="nav.home">Startseite</a>
+          <div class="nav-item">
+            <a href="#" class="nav-link is-active"><span data-i18n="nav.company">ISS</span></a>
+            <div class="nav-dropdown">
+              <a href="./about.html" class="nav-dropdown__link" data-i18n="nav.about">Über uns</a>
+              <a href="./chairman.html" class="nav-dropdown__link" data-i18n="nav.chairman">Botschaft des Vorsitzenden</a>
+              <a href="./policies.html" class="nav-dropdown__link" data-i18n="nav.policies">Unsere Richtlinien</a>
+              <a href="./certifications.html" class="nav-dropdown__link" data-i18n="nav.certifications">Zertifizierungen</a>
+              <a href="./hr.html" class="nav-dropdown__link is-active" data-i18n="nav.hr">Personalwesen</a>
+            </div>
+          </div>
+          <a href="./products.html" class="nav-link" data-i18n="nav.products">Produkte</a>
+          <a href="./agent.html" class="nav-link" data-i18n="nav.agent">Agent werden</a>
+          <a href="./academy.html" class="nav-link" data-i18n="nav.academy">Akademie</a>
+          <a href="./blog.html" class="nav-link" data-i18n="nav.blog">Blog</a>
+        </nav>
+        <div class="header-cta">
+          <a href="./contact.html" class="btn btn--primary btn--sm" data-i18n="nav.contact">Kontakt</a>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <main class="page-content">
+    <section class="page-header">
+      <div class="container">
+        <span class="page-header__overline" data-i18n="nav.hr">Personalwesen</span>
+        <h1 class="page-header__title">Karriere bei ISS SOLUTIONS</h1>
+        <p class="page-header__desc">Gestalten Sie mit uns die Zukunft der Bauchemie. Werden Sie Teil unseres Teams.</p>
+      </div>
+    </section>
+
+    <!-- Career overview -->
+    <section class="section">
+      <div class="container container--md">
+        <h2 class="h2 mb-6">Arbeiten bei ISS</h2>
+        <p class="mb-8">Wir bieten Ihnen ein dynamisches Arbeitsumfeld, flache Hierarchien, kontinuierliche Weiterbildungschancen sowie die Mitarbeit an spannenden, internationalen Projekten.</p>
+        
+        <h3 class="h3 mb-4">Offene Stellen</h3>
+        <div class="accordion" data-accordion-mode="multi">
+          <!-- Job 1 -->
+          <div class="accordion__item">
+            <button class="accordion__trigger">
+              <span>Chemiker / Produktentwickler (m/w/d) — Berlin</span>
+              <svg class="accordion__icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="6 9 12 15 18 9"></polyline></svg>
+            </button>
+            <div class="accordion__content">
+              <div class="accordion__body">
+                <p><strong>Ihre Aufgaben:</strong> Weiterentwicklung unserer Epoxidharze und Mikrozement-Systeme, Durchführung von Laboranalysen.</p>
+                <p><strong>Ihr Profil:</strong> Studium der Chemie, idealerweise Erfahrung in der Bauchemie.</p>
+                <p>Bewerbungen bitte per E-Mail an: <a href="mailto:careers@iss-solutions.eu" class="text-link">careers@iss-solutions.eu</a></p>
+              </div>
+            </div>
+          </div>
+          <!-- Job 2 -->
+          <div class="accordion__item">
+            <button class="accordion__trigger">
+              <span>Technischer Berater Außendienst (m/w/d) — Region Süd</span>
+              <svg class="accordion__icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="6 9 12 15 18 9"></polyline></svg>
+            </button>
+            <div class="accordion__content">
+              <div class="accordion__body">
+                <p><strong>Ihre Aufgaben:</strong> Fachliche Beratung unserer Kunden vor Ort auf Großbaustellen, Schulung der Verarbeiter.</p>
+                <p><strong>Ihr Profil:</strong> Handwerkliche oder bautechnische Ausbildung, Reisebereitschaft.</p>
+                <p>Bewerbungen bitte per E-Mail an: <a href="mailto:careers@iss-solutions.eu" class="text-link">careers@iss-solutions.eu</a></p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer id="site-footer" class="site-footer">
+    <div class="footer-bottom">
+      <div class="container">
+        <span class="footer-copyright">&copy; 2026 ISS SOLUTIONS.</span>
+      </div>
+    </div>
+  </footer>
+
+  <script type="module" src="../js/core/app.js"></script>
+</body>
+</html>
