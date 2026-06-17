@@ -282,6 +282,17 @@
 }
 
 /* Login Page Styling */
+@keyframes adminFadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
 .login-layout {
   display: flex;
   align-items: center;
@@ -300,6 +311,7 @@
   box-shadow: var(--shadow-2xl);
   border: 1px solid rgba(255, 255, 255, 0.1);
   overflow: hidden;
+  animation: adminFadeIn 0.6s cubic-bezier(0.16, 1, 0.3, 1) forwards;
 }
 
 .login-card__header {
